@@ -92,5 +92,136 @@ const HeroSection = styled.div`
       border-radius: 50%;
     }
   }
+  margin-bottom: 100px;
 `;
-export {HomePageConatiner, HeroSection};
+const HowDoWeWork = styled.div`
+  width: 100%;
+  .help-text{
+    width: 100%;
+    font-family: ${Font};
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(36, 58, 90);
+    margin-bottom: 30px;
+    position: relative;
+    >svg{
+      left: 46%;
+      top: 37px;
+      position: absolute;
+    }
+  }
+  .desc-text{
+    width: 80%;
+    font-family: ${Font};
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    color: rgb(37, 58, 91);
+    margin-bottom: 100px;
+  }
+  `;
+  const DesignWeDo =styled.div`
+    width: 100%; 
+  `;
+  const WeDoList = styled.div`
+  width: 100%;
+  display: flex;
+  //align-items: center;
+  padding: 20px;
+  flex-direction: ${({row}) => row};
+  .Software-text{
+    width: 50%;
+    .header{
+      width: 100%;
+      text-align: center;
+      font-family: ${Font};
+      font-weight: 600;
+      font-size: 28px;
+      text-align: left;
+      padding-left: 30px;
+      margin-bottom: 15px;
+      position: relative;
+      >svg{
+        left: 28px;
+        top: 35px;
+        position: absolute;
+      }
+    }
+    .description{
+      width: 80%;
+      font-family: ${Font};
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 15px;
+      text-align: left;
+      margin-left: 30px;
+      padding: 20px;
+      color: rgb(37, 58, 91);
+      border-radius: 7px;
+      background: ${({bgColor}) => bgColor};
+    }
+  }
+  .det-text{
+    width:50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    // animation-name: example;
+    // animation-duration: 2s;
+    // animation-direction: normal;
+    // @keyframes example {
+    //   0%   {display: block; transform: translateY(0)}
+    //   10%  {display: block; transform: translateY(-100%);}
+    // }
+    >img{
+      width: 85%;
+      height: 85%;
+      border-radius: 15px;
+    }
+  }
+  `;
+  const DoWeWork =styled.div`
+  width: 100%;
+  .he-text{
+    width: 80%;
+    height:80%;
+    margin: 0 auto;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    >div{
+      width: 90%;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 40px;
+      bottom: 50%;
+    .hel-text{
+      width: 70%;
+      font-family: ${Font};
+      text-align: left;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 47px;
+      color: rgb(255, 255, 255);
+    }
+    .button-text{
+      width: 30%;
+      font-family: ${Font};
+      font-size: 30px;
+      line-height: 47px;
+      color: rgb(255, 255, 255);
+      >svg{
+        with: 20px;
+        height: 20px;
+      }
+    }
+  }
+  }
+ `;
+export {HomePageConatiner, HeroSection, HowDoWeWork,DesignWeDo,DoWeWork, WeDoList};
