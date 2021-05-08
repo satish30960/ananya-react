@@ -3,7 +3,7 @@ import {HomePageConatiner, HeroSection, HowDoWeWork, DesignWeDo, DoWeWork, WeDoL
 import Line from '../../images/Rectangle-pink.svg';
 import MainImage from '../../images/h2.jpg';
 import DesignImage from '../../images/coode.jpg';
-import DesignerImage from '../../images/designer.png';
+import DesignerImage from '../../images/designer.jpg';
 import CoderImage from '../../images/cood.jpg'; 
 import MaintainImage from '../../images/awareness.png'; 
 import SoftImage from '../../images/soft.jpg';
@@ -106,7 +106,7 @@ class HomePage extends Component{
     <DesignWeDo>
       {
         servicesArray.map((data, index) => (
-          <WeDoList row={data.rotate ? "row-reverse" : "row"} bgColor={data.bgColor} key={index}>
+          <WeDoList row={data.rotate ? "row-reverse" : "row"} bgColor={data.bgColor} width={index === 3 ? 1 : 0} key={index}>
             <div className="Software-text">
               <div className="header">
                 {data.name}

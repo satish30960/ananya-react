@@ -11,10 +11,15 @@ const HeroSection = styled.div`
   background-image: url(${Banner});
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 1400px){
+    height: 600px;
+  }@media (max-width: 700px){
+    flex-direction: column;
+  }
   >div: first-child{
     margin-left: 20px;
     .welcome-text{
@@ -89,7 +94,22 @@ const HeroSection = styled.div`
     width: 50%;
     img{
       width: 80%;
-      border-radius: 50%;
+      border-radius: 20% 10%;
+    }
+    @media(max-width: 1100px){
+      img{
+        width: 70%;
+        border-radius: 20%;
+      }
+    }
+    @media(max-width: 700px){
+      width: 100%;
+      display: flex;
+      img{
+        margin: 0 auto;
+        width: 300px;
+        border-radius: 20%;
+      }
     }
   }
   margin-bottom: 100px;
@@ -110,6 +130,9 @@ const HowDoWeWork = styled.div`
       left: 46%;
       top: 37px;
       position: absolute;
+      @media(max-width: 700px){
+        left: 40%;
+      }
     }
   }
   .desc-text{
@@ -121,6 +144,9 @@ const HowDoWeWork = styled.div`
     margin: 0 auto;
     color: rgb(37, 58, 91);
     margin-bottom: 100px;
+    @media(max-width: 700px){
+      text-align: center;
+    }
   }
   `;
   const DesignWeDo =styled.div`
@@ -129,11 +155,17 @@ const HowDoWeWork = styled.div`
   const WeDoList = styled.div`
   width: 100%;
   display: flex;
-  //align-items: center;
+  align-items: center;
   padding: 20px;
   flex-direction: ${({row}) => row};
+  @media(max-width: 700px){
+    flex-direction: column;
+  }
   .Software-text{
     width: 50%;
+    @media(max-width: 700px){
+      width: 100%;
+    }
     .header{
       width: 100%;
       text-align: center;
@@ -149,6 +181,13 @@ const HowDoWeWork = styled.div`
         top: 35px;
         position: absolute;
       }
+      @media(max-width: 700px){
+        width: 100%;
+        padding-left: 0px;
+        >svg{
+          left: 0px;
+        }
+      }
     }
     .description{
       width: 80%;
@@ -163,23 +202,27 @@ const HowDoWeWork = styled.div`
       color: rgb(37, 58, 91);
       border-radius: 7px;
       background: ${({bgColor}) => bgColor};
+      @media(max-width: 700px){
+        width: 80%;
+        margin-left: 0px;
+      }
     }
   }
   .det-text{
     width:50%;
+    @media(max-width: 700px){
+      width: 100%;
+    }
     margin: 0 auto;
     margin-bottom: 20px;
-    // animation-name: example;
-    // animation-duration: 2s;
-    // animation-direction: normal;
-    // @keyframes example {
-    //   0%   {display: block; transform: translateY(0)}
-    //   10%  {display: block; transform: translateY(-100%);}
-    // }
     >img{
-      width: 85%;
-      height: 85%;
+      width: ${({width}) => width ? '90%' : '80%'};
+      height: 450px;
       border-radius: 15px;
+      @media(max-width: 700px){
+        width: ${({width}) => width ? '90%' : '90%'};
+        height: auto;
+      }
     }
   }
   `;
@@ -190,6 +233,10 @@ const HowDoWeWork = styled.div`
     height:80%;
     margin: 0 auto;
     position: relative;
+    @media(max-width: 700px){
+      width: 90%;
+      height: 200px;
+    }
     img{
       width: 100%;
       height: 100%;
@@ -201,6 +248,13 @@ const HowDoWeWork = styled.div`
       position: absolute;
       left: 40px;
       bottom: 50%;
+      @media(max-width: 700px){
+        width: 90%;
+        flex-direction: column;
+        left: 15px;
+        justify-content: center;
+        bottom: 30%;
+      }
     .hel-text{
       width: 70%;
       font-family: ${Font};
@@ -209,6 +263,10 @@ const HowDoWeWork = styled.div`
       font-size: 30px;
       line-height: 47px;
       color: rgb(255, 255, 255);
+      @media(max-width: 700px){
+        width: 100%;
+        font-size: 14px;
+      }
     }
     .button-text{
       width: 30%;
@@ -219,6 +277,10 @@ const HowDoWeWork = styled.div`
       >svg{
         with: 20px;
         height: 20px;
+      }
+      @media(max-width: 700px){
+        width: 100%;
+        font-size: 14px;
       }
     }
   }

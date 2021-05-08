@@ -23,17 +23,24 @@
 .App-header {
   font-size: calc(10px + 2vmin);
   min-height: 65px;
-  background-color: #9155a8;
+  background-color: #062d5c; /*#9155a8;*/ 
   position: fixed;
   width: 100%;
   color: #FFFFFF;
   top: 0;
   z-index: 99;
+  max-width: 1700px;
 }
 .App-data{
   width: 100%;
   min-height: 670px;
   margin-top: 68px;
+}
+@media (min-width: 1400px) {
+  .App-data{
+    margin-top: 70px;
+    min-height: 770px;
+  }
 }
 .App-footer{
   width: 100%;
