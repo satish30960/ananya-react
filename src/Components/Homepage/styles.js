@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {Font} from '../../helpers/constants';
-import Banner from '../../images/banner.png';
+import Banner from '../../images/bb1.png';
 
 const HomePageConatiner = styled.div`
   width: 100%;
@@ -93,6 +93,7 @@ const HeroSection = styled.div`
   >div: last-child{
     width: 50%;
     img{
+      display: none;
       width: 80%;
       border-radius: 20% 10%;
     }
