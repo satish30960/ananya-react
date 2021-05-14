@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import {Font} from '../../helpers/constants';
 import Banner from '../../images/bb1.png';
-
 const HomePageConatiner = styled.div`
   width: 100%;
   float: left;
