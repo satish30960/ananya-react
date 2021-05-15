@@ -6,6 +6,9 @@ import DesignImage from '../../images/DMA-12.png';
 import DevelopImage from '../../images/DMA-8.png';
 import DeliverImage from '../../images/DMA-5.png';
 import BackImage from '../../images/DMA-11.png';
+import {DoWeWork} from "../Homepage/styles";
+import MaintainImage from '../../images/awareness.png';
+import PermPhoneMsgIcon from '@material-ui/icons/PermPhoneMsg';
 const servicesArray = [
   {
     name: "DEFINE",
@@ -132,6 +135,22 @@ class WhatsWe extends Component{
       </div>
     </DoWeWorks>
   );
+  DoWeWork = () => (
+    <DoWeWork>
+    <div className="he-text">
+      <img src={MaintainImage} alt={"main"}/>
+      <div>
+        <div className="hel-text">
+      Would You Like To Start A Project With Us?
+      </div>
+      <div class="button-text">
+        <PermPhoneMsgIcon />
+        01277725105
+        </div>
+      </div>
+    </div>
+    </DoWeWork>
+    );
   render() {
     return (
     <HomePageConatiner>
@@ -140,6 +159,7 @@ class WhatsWe extends Component{
       {this.heroSection2()}
       {this.heroSection3()}
       {this.DoWeWorks()}
+      {this.DoWeWork()}
     </HomePageConatiner>
     );
   }

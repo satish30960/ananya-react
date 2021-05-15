@@ -228,11 +228,14 @@ const HowDoWeWork = styled.div`
   `;
   const DoWeWork =styled.div`
   width: 100%;
+  float: left;
+  margin-top: 40px;
   .he-text{
     width: 80%;
-    height:80%;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    justify-content: center;
     @media(max-width: 700px){
       width: 90%;
       height: 200px;

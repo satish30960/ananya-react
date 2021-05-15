@@ -129,16 +129,15 @@ class HomePage extends Component{
     <div className="he-text">
       <img src={MaintainImage} alt={"main"}/>
       <div>
-      <div className="hel-text">
-    Would You Like To Start A Project With Us?
-    </div>
-    <div class="button-text">
-      <PermPhoneMsgIcon />
-      01277725105
+        <div className="hel-text">
+      Would You Like To Start A Project With Us?
       </div>
+      <div class="button-text">
+        <PermPhoneMsgIcon />
+        01277725105
+        </div>
       </div>
     </div>
-  
   </DoWeWork>
 );
   render() {

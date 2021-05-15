@@ -3,6 +3,7 @@ import {Font} from '../../helpers/constants';
 const HomePageConatiner = styled.div`
   width: 100%;
   float: left;
+  background: #f0f0f0;
 `;
 const Hero = styled.div`
   width: 100%;
@@ -18,14 +19,14 @@ const Hero = styled.div`
 }
 `;
 const DesignWeD =styled.div`
-width: 100%;
-margin-left:15%;
-margin-right:15%;
-margin-bottom:8%;
-display:flex:
-align-items:center;
-flex-wrap: wrap;
-  `;
+  width: 100%;
+  margin-bottom:8%;
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #f0f0f0;
+`;
   const WeDoList = styled.div`
   width: calc((100% / 3) - 80px);
   display: flex;
@@ -41,29 +42,24 @@ flex-wrap: wrap;
       width: 100%;
     }
     .det-text{
-        width:50%;
+        width:100%;
         @media(max-width: 900px){
           width: 100%;
         }
         margin-bottom: 20px;
         >img{
-          width: ${({width}) => width ? '90%' : '80%'};
+          width: 100%;
           height: 200px;
-          border-radius: 20px;
-          @media(max-width: 900px){
-            width: ${({width}) => width ? '90%' : '90%'};
-            height: auto;
-          }
         }
       }
     .header{
-      width: 50%;
+      width: 100%;
       font-family: ${Font};
-      font-weight: 500;
+      font-weight: 400;
       font-size: 24px;
       text-align: left;
       margin-bottom: 15px;
-      
+      padding-left: 10px;
       >svg{
         left: 28px;
         top: 35px;
@@ -72,10 +68,11 @@ flex-wrap: wrap;
       }
     }
     .description{
-      width: 50%;
+      padding: 10px;
+      width: 100%;
       font-family: ${Font};
-      font-weight: 400;
-      font-size: 20px;
+      font-weight: 300;
+      font-size: 16px;
       line-height: 30px;
       margin-bottom: 15px;
       text-align: left;
@@ -161,15 +158,16 @@ const HowDoWeWor = styled.div`
 const DesignW = styled.div`
   width: 100%;
   margin-left:5%;
-margin-right:5%;
-display:flex:
-align-items:center;
-flex-wrap: wrap;
+  margin-right:5%;
+  display:flex;
+  align-items:center;
+  overflow: auto hidden;
   `;
   const WeDoLists = styled.div`
   width: calc((100% / 6) - 40px);
   display: flex;
   align-items: left;
+  cursor: pointer;
   flex-direction: ${({column}) => column};
   @media(max-width: 700px){
     flex-direction: row;
@@ -180,19 +178,15 @@ flex-wrap: wrap;
       width: 100%;
     }
     .det-text{
-        width:60%;
+        width:100%;
         @media(max-width: 700px){
           width: 100%;
         }
         margin-bottom: 10px;
         >img{
-          width: ${({width}) => width ? '80%' : '70%'};
+          width: 90%;
           height: 150px;
           border-radius: 10px;
-          @media(max-width: 500px){
-            width: ${({width}) => width ? '80%' : '80%'};
-            height: auto;
-          }
         }
       }
   `;

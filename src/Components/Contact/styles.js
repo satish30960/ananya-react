@@ -9,7 +9,10 @@ const HeroSec = styled.div`
   .aboutu{
     width:100%;
     height:100%;
-     margin-bottom:30%;
+     margin-bottom: 60px;;
+     @media(max-width: 1000px){
+       margin-bottom: 40px;
+     }
     }
     img{
         width:100%;
@@ -19,13 +22,12 @@ const HeroSec = styled.div`
 `;
 const DoWeWorkc =styled.div`
   width: 100%;
+  float: left;
   .he-text{
-    width: 90%;
-    height:50%;
+    width: 100%;
     margin: 0 auto;
-    position: relative;
     @media(max-width: 700px){
-      width: 90%;
+      width: 100%;
       height: 200px;
     }
     img{
@@ -33,22 +35,17 @@ const DoWeWorkc =styled.div`
       height: 100%;
     }
     >div{
-      width: 90%;
+      width: 100%;
       display: flex;
       align-items: center;
-      position: absolute;
-      left: 30px;
-      bottom: 20%;
-      @media(max-width: 700px){
-        width: 90%;
-        flex-direction: column;
-        left: 15px;
-        justify-content: center;
-        bottom: 10%;
+      margin: 10px;
+      float: left;
+      @media(max-width: 1000px){
+        flex-direction: column-reverse;
       }
     .hel-text{
       width:50%;
-      background: pink;
+      background: #0099a8;
       padding:10px 20px;
       margin: 10px 10px;
       font-family: ${Font};
@@ -56,7 +53,8 @@ const DoWeWorkc =styled.div`
       font-weight: bold;
       font-size: 30px;
       line-height: 10px;
-      color: rgb(255, 255, 255);
+      border-radius: 6px;
+      color: #FFFFFF;
       @media(max-width: 700px){
         width: 100%;
         font-size: 14px;
@@ -68,7 +66,7 @@ const DoWeWorkc =styled.div`
         text-align: left;
         font-size: 32px;
         font-family: ${Font};
-        color: #001689;
+        color: #FFFFFF;
         line-height: 20px;
       }
     h2{
@@ -76,7 +74,7 @@ const DoWeWorkc =styled.div`
         text-align: left;
         font-size: 20px;
         font-family: ${Font};
-        color: #001689;
+        color: #FFFFFF;
         line-height: 10px;
       }
       h3{
@@ -84,7 +82,7 @@ const DoWeWorkc =styled.div`
         text-align: left;
         font-size: 20px;
         font-family: ${Font};
-        color: #333;
+        color: #FFFFFF;
       }
   }
   }
@@ -95,6 +93,9 @@ const DoWeWorkc =styled.div`
     font-size: 30px;
     font-family: ${Font};
     color: #333;
+    @media(max-width: 1000px){
+      width: 100%;
+    }
   }
 }
 `;
@@ -106,6 +107,11 @@ const Form =styled.div`
     font-size: 30px;
     font-family: ${Font};
     color: #333;
+    
+    @media(max-width: 1000px){
+      width: 100%;
+      ont-size: 22px;
+    }
   }
  `;
 export {HomePageConatiner,HeroSec,DoWeWorkc,Form};

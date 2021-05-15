@@ -1,0 +1,112 @@
+{
+    "careers": [
+        {
+            "roleName": "Java Developer",
+            "postedDate": "2019",
+            "location": "London",
+            "jobType": "Full Time",
+            "aboutCompany": "ANANYA IT SERVICES LTD is a rapidly expanding organization based in London.Our aim is to provide high quality business solutions tailored to individual customer requirements. Our work focuses on building in-house UI Design Systems (cross platforms) for growing and well-established companies. We are creating a new Restful API’s, refactoring Legacy code, which will enable our developers to create clear and clean pragmatic codes. We have built a strong engineering foundation for knowledge-sharing with several skill shares, guilds, and open discussions running every month. Our Product & Services Development team is building out new digital platforms at a fast pace, and is now looking for a talented Java Developer to join our growing team and look after our vast client base needs. In addition to working in an exciting industry and in a friendly environment, our company provides each engineer with support for their progression within the company.",
+            "jobDescription": [
+                "Carrying out development in accordance with the agreed requirements and development standards",
+                "Testing of products in accordance with the test strategy to ensure that they are fit for purpose",
+                "Assisting the Team Leader in examining packages of work and giving realistic timescales for completion",
+                "Completion of work allocated within agreed time, cost and quality criteria and providing progress reports on assigned work as required",
+                "Management and control of problems and change within their area of responsibility as requested by the Team Leader, including negotiation with other teams as necessary",
+                "Prompt escalation of problems, issues and risks as necessary",
+                "Playing an active part in Process improvement, awareness of and compliance with all relevant quality processes and procedures, including completion of all the specified quality records in order to be successful the candidate will be familiar with FMSD strategy and will work to achieve those business objectives."
+            ],
+            "mandatorySkills": [
+                "Successfully manage themselves during the project lifecycle.",
+                "Identify and mitigate risks that would impact the failure of the overall project and success.",
+                "Effectively engage with multiple stakeholders and vendors on a regular basis.",
+                "Must have hands-on Coding experience",
+                "Must have worked on 2-3 Java Spring implementations",
+                "Good knowledge of Spring Boot, Spring Integration, Spring Data",
+                "Excellent analysis skills",
+                "Strong and clear communication and presentation skills",
+                "Self-motivated and enthusiastic",
+                "Knowledge of the Scala programming language and the Akka framework.",
+                "Experience as an open-source contributor and/or speaker"
+            ],
+            "technicalSkill":[
+                "– Java 11",
+                "– Spring Boot",
+                "– MySQL",
+                "– Oracle /Mongo Database",
+                "– Linux",
+                "- SOAP",
+                "– Restful Web Services",
+                "– JMS (RabbitMQ & WebSphere)",
+                "– UI experience",
+                "– Batch/File Handling",
+                "– GIT",
+                "– WebSphere",
+                "– IBM DMS tool experience"
+            ],
+            "additionalInfo": [],
+            "desiredSkills": [
+                "Successful candidates would ideally also demonstrate: <br/>An understanding of Risk Management.",
+                "Strong experience in scripting languages, particularly Python Ability to code test tooling in Java Understanding of, and experience in non-functional testing, particularly around performance testing of latency metrics."
+            ],
+            "qualification": [
+                "Educated to at least graduate level (e.g. Bachelor Of Engineering, B-Tech) or equivalent is essential."
+            ],
+            "salary": "Salary: £33,000 to £35,000 per year",
+            "expiredStatus": false
+        },
+        {
+            "roleName": "Java Developer",
+            "postedDate": "2019",
+            "location": "London",
+            "jobType": "Full Time",
+            "aboutCompany": "ANANYA IT SERVICES LTD is a rapidly expanding organization based in London.Our aim is to provide high quality business solutions tailored to individual customer requirements. Our work focuses on building in-house UI Design Systems (cross platforms) for growing and well-established companies. We are creating a new Restful API’s, refactoring Legacy code, which will enable our developers to create clear and clean pragmatic codes. We have built a strong engineering foundation for knowledge-sharing with several skill shares, guilds, and open discussions running every month. Our Product & Services Development team is building out new digital platforms at a fast pace, and is now looking for a talented Java Developer to join our growing team and look after our vast client base needs. In addition to working in an exciting industry and in a friendly environment, our company provides each engineer with support for their progression within the company.",
+            "jobDescription": [
+                "Carrying out development in accordance with the agreed requirements and development standards",
+                "Testing of products in accordance with the test strategy to ensure that they are fit for purpose",
+                "Assisting the Team Leader in examining packages of work and giving realistic timescales for completion",
+                "Completion of work allocated within agreed time, cost and quality criteria and providing progress reports on assigned work as required",
+                "Management and control of problems and change within their area of responsibility as requested by the Team Leader, including negotiation with other teams as necessary",
+                "Prompt escalation of problems, issues and risks as necessary",
+                "Playing an active part in Process improvement, awareness of and compliance with all relevant quality processes and procedures, including completion of all the specified quality records in order to be successful the candidate will be familiar with FMSD strategy and will work to achieve those business objectives."
+            ],
+            "mandatorySkills": [
+                "Successfully manage themselves during the project lifecycle.",
+                "Identify and mitigate risks that would impact the failure of the overall project and success.",
+                "Effectively engage with multiple stakeholders and vendors on a regular basis.",
+                "Must have hands-on Coding experience",
+                "Must have worked on 2-3 Java Spring implementations",
+                "Good knowledge of Spring Boot, Spring Integration, Spring Data",
+                "Excellent analysis skills",
+                "Strong and clear communication and presentation skills",
+                "Self-motivated and enthusiastic",
+                "Knowledge of the Scala programming language and the Akka framework.",
+                "Experience as an open-source contributor and/or speaker"
+            ],
+            "technicalSkill":[
+                "– Java 11",
+                "– Spring Boot",
+                "– MySQL",
+                "– Oracle /Mongo Database",
+                "– Linux",
+                "- SOAP",
+                "– Restful Web Services",
+                "– JMS (RabbitMQ & WebSphere)",
+                "– UI experience",
+                "– Batch/File Handling",
+                "– GIT",
+                "– WebSphere",
+                "– IBM DMS tool experience"
+            ],
+            "additionalInfo": [],
+            "desiredSkills": [
+                "Successful candidates would ideally also demonstrate: <br/>An understanding of Risk Management.",
+                "Strong experience in scripting languages, particularly Python Ability to code test tooling in Java Understanding of, and experience in non-functional testing, particularly around performance testing of latency metrics."
+            ],
+            "qualification": [
+                "Educated to at least graduate level (e.g. Bachelor Of Engineering, B-Tech) or equivalent is essential."
+            ],
+            "salary": "Salary: £33,000 to £35,000 per year",
+            "expiredStatus": true
+        }
+    ]
+}

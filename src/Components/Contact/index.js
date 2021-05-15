@@ -4,6 +4,8 @@ import {HomePageConatiner, HeroSec,DoWeWorkc} from './styles';
 import MainImage from '../../images/contact.jpg';
 import PermPhoneMsgIcon from '@material-ui/icons/PermPhoneMsg';
 import MailIcon from '@material-ui/icons/Mail';
+import {DoWeWork} from "../Homepage/styles";
+import MaintainImage from '../../images/awareness.png'; 
 class Contact extends Component{
   rect = (color) => (
     <svg width="87" height="13" viewBox="0 0 87 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,12 +71,29 @@ class Contact extends Component{
           </div>
       </DoWeWorkc>
     );
-    
+    DoWeWork = () => (
+    <DoWeWork>
+    <div className="he-text">
+      <img src={MaintainImage} alt={"main"}/>
+      <div>
+        <div className="hel-text">
+      Would You Like To Start A Project With Us?
+      </div>
+      <div class="button-text">
+        <PermPhoneMsgIcon />
+        01277725105
+        </div>
+      </div>
+    </div>
+    </DoWeWork>
+    );
   render() {
     return (
       <HomePageConatiner>
       {this.heroSec()}
       {this.DoWeWorkc()}
+      <iframe style={{width: "100%", height: "300px"}} frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=CM13%203FR&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" aria-label="CM13 3FR"></iframe>
+      {this.DoWeWork()}
     </HomePageConatiner>
     );
   }
