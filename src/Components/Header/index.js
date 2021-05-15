@@ -66,9 +66,9 @@ class Header extends Component{
                 Home
               </MenuLinks>
             </CustomListItem>
-            <CustomListItem showTab={true} active={this.state.active === 'whats-we'}>
-              <MenuLinks onClick={() => this.navigateRoute('/whats-we')}>
-                Whats we
+            <CustomListItem showTab={true} active={this.state.active === 'what-we-do'}>
+              <MenuLinks onClick={() => this.navigateRoute('/what-we-do')}>
+                What We Do
               </MenuLinks>
             </CustomListItem>
             <CustomListItem showTab={true} active={this.state.active === 'services'}>

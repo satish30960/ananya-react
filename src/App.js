@@ -8,7 +8,7 @@ function App() {
       <MainComponent>
         <Switch>
           <Route
-            path={"/whats-we"}
+            path={"/what-we-do"}
             component={WhatsWe}
           />
           <Route

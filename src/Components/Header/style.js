@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import {Font} from '../../helpers/constants';
 
 const HeaderContainer = styled.div`
-  width: 100%
-  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -175,11 +174,6 @@ const CustomListItem = styled.li`
   }
   
   @media (max-width: 1200px) {
-    // min-width: 120px;
-    // border-left: ${({ active }) => active ? '5px solid #F6797D' : '5px solid transparent'};
-    // border-bottom: none;
-    // text-align: left;
-    ${'' /* color: ${({ active }) => active ? '#F6797D' : '#C4C4C4'}; */}
     > a {
       color: ${({ active }) => active ? '#F6797D' : '#C4C4C4'};
       > svg {
@@ -187,8 +181,6 @@ const CustomListItem = styled.li`
       }
     }
     &:hover, &:focus, &:active {
-      border-left: 5px solid #F6797D;
-      border-bottom:none;
         >a {
           text-decoration: none;
           color: #F6797D;
