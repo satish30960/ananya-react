@@ -110,5 +110,12 @@
             "salary": "Salary: £33,000 to £35,000 per year",
             "expiredStatus": true
         }
+    ],
+    "location":[
+        "London"
+    ],
+    "jobType":[
+        "Full Time",
+        "Part Time"
     ]
 }
