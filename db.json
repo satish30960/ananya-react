@@ -1,6 +1,7 @@
 {
     "careers": [
         {
+            "id": 1,
             "roleName": "Java Developer",
             "postedDate": "2019",
             "location": "London",
@@ -55,6 +56,7 @@
             "expiredStatus": false
         },
         {
+            "id": 2,
             "roleName": "Java Developer",
             "postedDate": "2019",
             "location": "London",
@@ -108,5 +110,12 @@
             "salary": "Salary: £33,000 to £35,000 per year",
             "expiredStatus": true
         }
+    ],
+    "location":[
+        "London"
+    ],
+    "jobType":[
+        "Full Time",
+        "Part Time"
     ]
 }
