@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {HomePageConatiner, HeroSection1,DesignWeDo1,HeroSection2,HeroSection3,WeDoListd,DoWeWorks} from './styles';
-import MainImage from '../../images/about3.png';
+import MainImage from '../../images/aboutus4.jpg';
 import DefineImage from '../../images/DMA.png';
 import DesignImage from '../../images/DMA-12.png';
 import DevelopImage from '../../images/DMA-8.png';
@@ -143,7 +143,7 @@ class WhatsWe extends Component{
         <div className="hel-text">
       Would You Like To Start A Project With Us?
       </div>
-      <div class="button-text">
+      <div className="button-text">
         <PermPhoneMsgIcon />
         01277725105
         </div>

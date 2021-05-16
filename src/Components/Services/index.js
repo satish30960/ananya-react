@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {HomePageConatiner,HowDoWeWor,Hero,DesignWeD,WeDoList, DesignWe,DesignW,WeDoLists,Design} from './styles';
-import MainImage from '../../images/service.png';
+import MainImage from '../../images/our-services.jpg';
 import DesignImage from '../../images/health.jpg';
 import DesignerImage from '../../images/development.jpg';
 import CoderImage from '../../images/financial.jpg'; 

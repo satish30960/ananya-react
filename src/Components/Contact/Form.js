@@ -44,7 +44,7 @@ export default function TextFieldSizes() {
       e.target.reset();
   }
   return (
-    <form className={classes.root} validate autoComplete="off" onSubmit={sendEmail}>
+    <form className={classes.root} validate autoComplete="off" onSubmit={sendEmail} name={"Contact us"}>
       <div>
         <TextField 
           label="Name"

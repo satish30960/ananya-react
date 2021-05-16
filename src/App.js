@@ -1,5 +1,5 @@
 import './App.css';
-import { HomePage, WhatsWe, Careers, Contact, Services}  from './Components';
+import { HomePage, WhatsWe, Careers, Contact, Services, CareersDetails}  from './Components';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import MainComponent from './Components/MainComponent';
 function App() {
@@ -18,6 +18,10 @@ function App() {
           <Route
             path={"/contact"}
             component={Contact}
+          />
+          <Route
+            path={"/careers/:id"}
+            component={CareersDetails}
           />
           <Route
             path={"/careers"}

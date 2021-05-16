@@ -79,7 +79,7 @@ class Contact extends Component{
         <div className="hel-text">
       Would You Like To Start A Project With Us?
       </div>
-      <div class="button-text">
+      <div className="button-text">
         <PermPhoneMsgIcon />
         01277725105
         </div>
@@ -92,7 +92,7 @@ class Contact extends Component{
       <HomePageConatiner>
       {this.heroSec()}
       {this.DoWeWorkc()}
-      <iframe style={{width: "100%", height: "300px"}} frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=CM13%203FR&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" aria-label="CM13 3FR"></iframe>
+      <iframe style={{width: "100%", height: "300px"}} title="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=CM13%203FR&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" aria-label="CM13 3FR"></iframe>
       {this.DoWeWork()}
     </HomePageConatiner>
     );
