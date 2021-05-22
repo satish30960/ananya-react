@@ -6,7 +6,6 @@
             "postedDate": "05/15/2020",
             "location": "London",
             "jobType": "Full Time",
-            "aboutCompany": "ANANYA IT SERVICES LTD is a rapidly expanding organization based in London.Our aim is to provide high quality business solutions tailored to individual customer requirements. Our work focuses on building in-house UI Design Systems (cross platforms) for growing and well-established companies. We are creating a new Restful API’s, refactoring Legacy code, which will enable our developers to create clear and clean pragmatic codes. We have built a strong engineering foundation for knowledge-sharing with several skill shares, guilds, and open discussions running every month. Our Product & Services Development team is building out new digital platforms at a fast pace, and is now looking for a talented Java Developer to join our growing team and look after our vast client base needs. In addition to working in an exciting industry and in a friendly environment, our company provides each engineer with support for their progression within the company.",
             "jobDescription": [
                 "Carrying out development in accordance with the agreed requirements and development standards",
                 "Testing of products in accordance with the test strategy to ensure that they are fit for purpose",
@@ -60,8 +59,7 @@
             "roleName": "Cyber Security Consultant",
             "postedDate": "12/16/2020",
             "location": "London",
-            "jobType": "Full Time",
-            "aboutCompany": "ANANYA IT SERVICES LTD is a rapidly expanding organization based in London.Our aim is to provide high quality business solutions tailored to individual customer requirements. Our work focuses on building in-house UI Design Systems (cross platforms) for growing and well-established companies. We are creating a new Restful API’s, refactoring Legacy code, which will enable our developers to create clear and clean pragmatic codes. We have built a strong engineering foundation for knowledge-sharing with several skill shares, guilds, and open discussions running every month. Our Product & Services Development team is building out new digital platforms at a fast pace, and is now looking for a talented Java Developer to join our growing team and look after our vast client base needs. In addition to working in an exciting industry and in a friendly environment, our company provides each engineer with support for their progression within the company.",
+            "jobType": "Full Time"
             "jobDescription": [
                 "The candidate is expected to be able to implement security services independently to deploy security services / products in mega projects that involves many security products and also across different domains (server, storage, applications, network etc).In addition to carrying out implementation, is required to give technical advice’s, recommendations & presentations in order to convince customer to adopt / accept the proposed solution.",
                 "In addition to carrying out implementation, is required to give technical advice’s, recommendations & presentations in order to convince customer to adopt / accept the proposed solution."    
