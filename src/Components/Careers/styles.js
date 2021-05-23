@@ -24,6 +24,9 @@ const CareerListContainer = styled.div`
         width: 100%;
         float: left;
         padding-left: 40px;
+        @media(max-width: 700px){
+            padding-left: 10px;
+        }
         .roleName{
             width: 100%;
             font-family: ${Font};

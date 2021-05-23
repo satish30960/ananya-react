@@ -42,6 +42,7 @@ const DoWeWorkc =styled.div`
       float: left;
       @media(max-width: 1000px){
         flex-direction: column-reverse;
+        margin: 0px;
       }
     .hel-text{
       width:50%;
@@ -94,7 +95,7 @@ const DoWeWorkc =styled.div`
     font-family: ${Font};
     color: #333;
     @media(max-width: 1000px){
-      width: 100%;
+      width: 90%;
     }
   }
 }

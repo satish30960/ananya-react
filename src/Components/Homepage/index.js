@@ -132,7 +132,7 @@ class HomePage extends Component{
         <div className="hel-text">
       Would You Like To Start A Project With Us?
       </div>
-      <div className="button-text">
+      <div class="button-text">
         <PermPhoneMsgIcon />
         01277725105
         </div>

@@ -1,14 +1,16 @@
 import React, {Component} from 'react';
-import {HomePageConatiner, HeroSection1,DesignWeDo1,HeroSection2,HeroSection3,WeDoListd,DoWeWorks} from './styles';
+import {HomePageConatiner, HeroSection1,DesignWeDo1,HeroSection2,DoWeWorks} from './styles';
 import MainImage from '../../images/aboutus4.jpg';
-import DefineImage from '../../images/DMA.png';
-import DesignImage from '../../images/DMA-12.png';
-import DevelopImage from '../../images/DMA-8.png';
-import DeliverImage from '../../images/DMA-5.png';
+import DefineImage from '../../images/DMA-8.jpg';
+import DesignImage from '../../images/whatwedoDesign.jpg';
+import DevelopImage from '../../images/DMA-12.jpg';
+import DeliverImage from '../../images/deliver.jpg';
 import BackImage from '../../images/DMA-11.png';
 import {DoWeWork} from "../Homepage/styles";
 import MaintainImage from '../../images/awareness.png';
 import PermPhoneMsgIcon from '@material-ui/icons/PermPhoneMsg';
+import { DesignWeD, WeDoList } from '../Services/styles';
+
 const servicesArray = [
   {
     name: "DEFINE",
@@ -100,26 +102,25 @@ class WhatsWe extends Component{
   </HeroSection2>
   );
   heroSection3 = () => (
-    <HeroSection3>
-    {
+    <DesignWeD>
+      {
         servicesArray.map((data, index) => (
-          <WeDoListd row={data.rotate ? "row-reverse" : "row"} bgColor={data.bgColor} width={index === 3 ? 1 : 0} key={index}>
+          <WeDoList row={data.rotate ? "row-reverse" : "row"} bgColor={data.bgColor} width={index === 3 ? 1 : 0} key={index}>
             <div className="Software-text">
+            <div className="det-text">
+              <img src={data.image} alt={"some"}/>
+            </div>
               <div className="header">
                 {data.name}
-                {this.rect(data.color)}
-              </div>
-              <div className="det-text">
-              {/* <img src={data.image} alt={"some"}/> */}
               </div>
               <div className="description">
                 {data.description}
               </div>
             </div>
-          </WeDoListd>
+          </WeDoList>
         ))
       }
-  </HeroSection3>
+     </DesignWeD>
   );
   DoWeWorks = () => (
     <DoWeWorks>

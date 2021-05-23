@@ -35,6 +35,11 @@ const DesignWeD =styled.div`
   flex-direction: ${({column}) => column};
   @media(max-width: 900px){
     flex-direction: row;
+    width: calc((100% / 2) - 80px);
+  }
+  @media(max-width: 700px){
+    flex-direction: row;
+    width: 95%;
   }
   .Software-text{
     width:100%;
@@ -49,7 +54,15 @@ const DesignWeD =styled.div`
         margin-bottom: 20px;
         >img{
           width: 100%;
-          height: 200px;
+          height: 300px;
+          @media(max-width: 900px){
+              width: 100%;
+              height: 500px;
+          }
+          @media(max-width: 500px){
+              width: 100%;
+              height: 300px;
+          }
         }
       }
     .header{
@@ -124,6 +137,9 @@ const HowDoWeWor = styled.div`
     width: 100%;
     background: #001689;
     padding: 40px 40px;
+    @media(max-width: 700px){
+      padding: 10px;
+    }
     >div:first-child{
       font-weight: 300;
       color: #fff;
@@ -132,6 +148,9 @@ const HowDoWeWor = styled.div`
       margin-bottom: 1.4375rem;
       font-family: ${Font};
       text-align: center;
+      @media(max-width: 700px){
+        font-size: 15px;
+      }
     }      
     >div: last-child{
       width:100%;
@@ -141,6 +160,17 @@ const HowDoWeWor = styled.div`
       color: #fff;
       font-family: ${Font};
       text-align: center;
+      h3{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        >svg{
+          margin-right: 5px;
+        }
+      }
+      @media(max-width: 700px){
+        font-size: 16px;
+      }
     }
   }
   margin-bottom:8%;
@@ -157,21 +187,15 @@ const HowDoWeWor = styled.div`
   `;
 const DesignW = styled.div`
   width: 100%;
-  margin-left:5%;
-  margin-right:5%;
-  display:flex;
-  align-items:center;
-  overflow: auto hidden;
+  float: left;
   `;
   const WeDoLists = styled.div`
-  width: calc((100% / 6) - 40px);
+  width: 100%;
   display: flex;
   align-items: left;
   cursor: pointer;
   flex-direction: ${({column}) => column};
-  @media(max-width: 700px){
-    flex-direction: row;
-  }
+
   .Software-text{
     width:100%;
     @media(max-width: 700px){
@@ -184,8 +208,8 @@ const DesignW = styled.div`
         }
         margin-bottom: 10px;
         >img{
-          width: 90%;
-          height: 150px;
+          width: 60%;
+          margin: 0 auto;
           border-radius: 10px;
         }
       }

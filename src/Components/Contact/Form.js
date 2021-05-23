@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('700')]: {
       width: '82%',
       margin: "20px 25px 20px 10px",
+      padding: "30px 15px 30px"
     }
     // '& .MuiTextField-root': {
     //   margin: theme.spacing(1),

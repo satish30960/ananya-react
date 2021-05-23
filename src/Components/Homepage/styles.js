@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Font} from '../../helpers/constants';
 import Banner from '../../images/bb1.png';
+import MBanner from '../../images/mbb1.png';
 const HomePageConatiner = styled.div`
   width: 100%;
   float: left;
@@ -16,8 +17,20 @@ const HeroSection = styled.div`
   justify-content: space-between;
   @media (max-width: 1400px){
     height: 600px;
-  }@media (max-width: 700px){
+  }
+  @media (max-width: 900px){
+    background-size: contain;
+    height: 500px;
+  }
+  @media (max-width: 700px){
     flex-direction: column;
+    background-image: url(${MBanner});
+    background-size: cover;
+    height: 745px;
+  }
+  @media (max-width: 500px){
+    background-size: contain;
+    height: 745px;
   }
   >div: first-child{
     margin-left: 20px;
@@ -32,6 +45,7 @@ const HeroSection = styled.div`
       margin-bottom: 11px;
       @media(max-width: 500px){
         font-size: 15px;
+        margin-top: 10px;
       }
     }.des-text{
       font-family: ${Font};
@@ -44,6 +58,7 @@ const HeroSection = styled.div`
       margin-bottom: 11px;
       @media(max-width: 500px){
         font-size: 15px;
+        margin-top: 10px;
       }
     }
     .hero-text{
@@ -57,8 +72,11 @@ const HeroSection = styled.div`
       word-break: break-word;
       width: 100%;
       text-transform: uppercase;
-      @media(max-width: 500px){
+      @media(max-width: 1100px){
         font-size: 25px;
+      }
+      @media(max-width: 500px){
+        font-size: 22px;
       }
       position: relative;
       .line{

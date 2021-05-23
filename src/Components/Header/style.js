@@ -10,9 +10,10 @@ const HeaderContainer = styled.div`
   height: 68px;
   .logo{
     width: 20%;
+    cursor: pointer;
     >img{
-      width: 235px;
-      height: 65px;
+      width: 284px;
+      height: 120px;
     }
   }
   .menu-List{
@@ -43,7 +44,7 @@ const HeaderContainer = styled.div`
 `;
 const MenuLinks = styled.a`
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: capitalize;
   color: #979ba0;
   font-family: ${Font};
@@ -53,23 +54,6 @@ const MenuList = styled.ul`
   display: flex;
   margin-bottom: 0 !important;
   height: 50px;
-  ${'' /* @media (max-width: 1200px) { */}
-    ${'' /* position: absolute;
-    top: 50px;
-    right: 20px;
-    padding: 10px 0;
-    margin: 0;
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: 1px 1.732px 46px rgba(0,0,0,0.18);
-    z-index: 1;
-    width: 155px;
-  }
-  
-  @media (max-width: 1200px) {
-    right: 0;
-  }
-  margin: 3px 0 -15px; */}
   @media(max-width: 1200px){
     ul > li:hover {
     color: #F6797D;
@@ -147,16 +131,17 @@ const CustomListItem = styled.li`
     float: left;
     text-transform: capitalize;
     font-size: 16px;
-    color: ${({ active }) => active ? '#F6797D' : '#C4C4C4'};
+    color: ${({ active }) => active ? '#F6797D' : '#FFFFFF'};
     font-family: ${Font};
+    font-weight: 500;
     > svg {
-      fill: ${({ active }) => active ? '#F6797D' : '#C4C4C4'};
+      fill: ${({ active }) => active ? '#F6797D' : '#FFFFFF'};
       width: 10px;
       margin-left: 3px;
     }
     &:hover, &:focus, &:active {
       text-decoration: none;
-      color: ${({ active }) => active ? '#F6797D' : '#C4C4C4'};
+      color: ${({ active }) => active ? '#F6797D' : '#FFFFFF'};
       > svg {
         fill: #F6797D;
         width: 10px;
@@ -175,9 +160,9 @@ const CustomListItem = styled.li`
   
   @media (max-width: 1200px) {
     > a {
-      color: ${({ active }) => active ? '#F6797D' : '#C4C4C4'};
+      color: ${({ active }) => active ? '#F6797D' : '#FFFFFF'};
       > svg {
-        fill: ${({ active }) => active ? '#F6797D' : '#C4C4C4'};
+        fill: ${({ active }) => active ? '#F6797D' : '#FFFFFF'};
       }
     }
     &:hover, &:focus, &:active {

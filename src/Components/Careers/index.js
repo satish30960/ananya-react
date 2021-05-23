@@ -7,7 +7,7 @@ import GroupedSelect from './CustomMenu';
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
-let statusofDate = 1;
+
 class Careers extends Component{
   constructor(props){
     super(props);
@@ -68,16 +68,27 @@ class Careers extends Component{
       <GroupedSelect location={this.state.location} jobType={this.state.jobType} locationMenuValue={this.state.locationMenuValue} jobTypeValue={this.state.jobTypeValue} onChange={this.onChange}/>
     </Filters>
   );
-  getDiff = (date) => {
-    const date1 = new Date(date);
-    const date2 = new Date();
-    const diffTime = Math.abs(date2 - date1);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    const months = diffDays/30;
-    const year = (diffDays/30)/12;
-    if(year < 1) {statusofDate = 0} else{statusofDate = 1}
-    return parseInt(year < 1 ? months : year);
-  }
+  getDiff = (stringDate) => {
+    let currDate = new Date();
+    let diffMs=currDate.getTime() - new Date(stringDate).getTime();
+    let sec=(diffMs/1000);
+    if(sec<60)
+        return parseInt(sec)+' second'+(parseInt(sec)>1?'s':'')+' ago';
+    let min=sec/60;
+    if(min<60)
+        return parseInt(min)+' minute'+(parseInt(min)>1?'s':'')+' ago';
+    let h=min/60;
+    if(h<24)
+        return parseInt(h)+' hour'+(parseInt(h)>1?'s':'')+' ago';
+    let d=h/24;
+    if(d<30)
+        return parseInt(d)+' day'+(parseInt(d)>1?'s':'')+' ago';
+    let m=d/30;
+    if(m<12)
+        return parseInt(m)+' month'+(parseInt(m)>1?'s':'')+' ago';
+    let y=m/12;
+    return parseInt(y)+' year'+(parseInt(y)>1?'s':'')+' ago';
+}
   renderList = () => (
     <CareerListContainer>
       {this.state.careersData && this.state.careersData.length > 0 ? this.state.careersData.map((data, index) => (<div key={index}>
@@ -87,7 +98,7 @@ class Careers extends Component{
         <div className="jobDetails">
           <div className={"dateinfo"}>
             <AccessTimeIcon/>
-            <span>{this.getDiff(data.postedDate)}</span>{statusofDate ? "year ago" : "months ago"}
+            <span>{this.getDiff(data.postedDate)}</span>
           </div>
           <div className={"dateinfo"}>
             <LocationOnIcon/>

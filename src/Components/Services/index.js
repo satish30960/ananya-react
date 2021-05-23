@@ -4,7 +4,7 @@ import MainImage from '../../images/our-services.jpg';
 import DesignImage from '../../images/health.jpg';
 import DesignerImage from '../../images/development.jpg';
 import CoderImage from '../../images/financial.jpg'; 
-import MaintainImage from '../../images/software.png'; 
+import MaintainImage from '../../images/software.jpg'; 
 import SoftImage from '../../images/mobile.jpg';
 import HardImage from '../../images/cloud.jpg';
 import DesigImage from '../../images/client1.png';
@@ -17,6 +17,10 @@ import SoImage from '../../images/client7.jpg';
 import HaImage from '../../images/client8.png';
 import PermPhoneMsgIcon from '@material-ui/icons/PermPhoneMsg';
 import MailIcon from '@material-ui/icons/Mail';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 const servicesArray = [
   {
     name: "Healthcare",
@@ -124,7 +128,6 @@ class Services extends Component{
                 </div>
                   <div className="header">
                     {data.name}
-                    {this.rect(data.color)}
                   </div>
                   <div className="description">
                     {data.description}
@@ -172,9 +175,44 @@ class Services extends Component{
             </div>
        </Design>
     );
-   DesignW = () => (
-        <DesignW>
-         {
+   DesignW = () => {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
+      return <DesignW>
+         <Slider {...settings}>{
           serviceArray.map((data, index) => (
               <WeDoLists row={data.rotate ? "row-reverse" : "row"} bgColor={data.bgColor} width={index === 3 ? 1 : 0} key={index}>
                 <div className="Software-text">
@@ -184,9 +222,9 @@ class Services extends Component{
                 </div>
               </WeDoLists>
             ))
-          }
+          }</Slider>
         </DesignW>
-   );
+   };
   render() {
     return (
       <HomePageConatiner>
