@@ -10,10 +10,12 @@ const HeroSection = styled.div`
   font-family: ${Font};
   background-image: url(${Banner});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 700px;
+  width: 100%;
+  float: left;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   @media (max-width: 1400px){
     height: 600px;
@@ -25,7 +27,7 @@ const HeroSection = styled.div`
   @media (max-width: 700px){
     flex-direction: column;
     background-image: url(${MBanner});
-    background-size: cover;
+    background-size: contain;
     height: 745px;
   }
   @media (max-width: 500px){
@@ -33,14 +35,15 @@ const HeroSection = styled.div`
     height: 745px;
   }
   >div: first-child{
-    margin-left: 20px;
+    margin-left: 90px;
+    margin-top: 90px;
     .welcome-text{
       font-family: ${Font};
       font-size: 18px;
       line-height: 22px;
-      color: #FFFFFF;
+      color: rgba(90,83,150, 1);
       letter-spacing: 2px;
-      font-weight: 600;
+      font-weight: 500;
       margin-top: 20px;
       margin-bottom: 11px;
       @media(max-width: 500px){
@@ -51,23 +54,23 @@ const HeroSection = styled.div`
       font-family: ${Font};
       font-size: 18px;
       line-height: 22px;
-      color: #FFFFFF;
+      color: rgba(90,83,150, 0.7);
       letter-spacing: 2px;
       font-weight: 400;
       margin-top: 20px;
-      margin-bottom: 11px;
+      margin-bottom: 20px;
       @media(max-width: 500px){
         font-size: 15px;
         margin-top: 10px;
       }
     }
     .hero-text{
-      font-size: 48px;
+      font-size: 40px;
       margin: 0px;
-      color: #FFFFFF;
+      color: rgba(90,83,150, 1);
       font-family: ${Font};
       letter-spacing: 0px;
-      font-weight: 800;
+      font-weight: 500;
       line-height: 57px;
       word-break: break-word;
       width: 100%;
@@ -89,16 +92,17 @@ const HeroSection = styled.div`
       width: 100%;
       button{
         margin-top: 0px;
-        width: 37%;
-        background-color: rgb(246, 121, 125);
-        color: rgb(255, 255, 255);
-        padding: 13px 10px;
-        border-radius: 3px;
-        border: none;
+        width: 130px;
+        background-color: transparent;
+        color: rgba(90,83,150, 0.6);
+        padding: 8px 10px;
+        border-radius: 25px;
+        border: 1px solid transparent;
+        border-image: linear-gradient(to right, blue, white);
+        border-image-slice: 1;
         font-size: 18px;
-        box-shadow: rgb(0 0 0 / 11%) 4px 6px 5px -1px;
         font-family: ${Font};
-        font-weight: 500;
+        font-weight: 400;
         line-height: 21px;
         text-align: center;
         text-transform: uppercase;
@@ -130,10 +134,11 @@ const HeroSection = styled.div`
       }
     }
   }
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 `;
 const HowDoWeWork = styled.div`
   width: 100%;
+  float: left;
   .help-text{
     width: 100%;
     font-family: ${Font};
@@ -161,7 +166,7 @@ const HowDoWeWork = styled.div`
     font-size: 20px;
     margin: 0 auto;
     color: rgb(37, 58, 91);
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     @media(max-width: 700px){
       text-align: center;
     }
@@ -169,6 +174,7 @@ const HowDoWeWork = styled.div`
   `;
   const DesignWeDo =styled.div`
     width: 100%; 
+    float: left;
   `;
   const WeDoList = styled.div`
   width: 100%;

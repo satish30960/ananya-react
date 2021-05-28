@@ -11,9 +11,22 @@ const HeaderContainer = styled.div`
   .logo{
     width: 20%;
     cursor: pointer;
+    display: flex;
     >img{
-      width: 284px;
+      width: 50px;
       height: 120px;
+      position: relative;
+      margin-left: 40px;
+    }
+    .ltext{
+      font-size: 25px;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: #FFF;
+      top: 20px;
+      position: absolute;
+      left: 92px;
+      font-family: ${Font};
     }
   }
   .menu-List{

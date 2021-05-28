@@ -21,10 +21,6 @@ const useStyles = makeStyles((theme) => ({
       margin: "20px 25px 20px 10px",
       padding: "30px 15px 30px"
     }
-    // '& .MuiTextField-root': {
-    //   margin: theme.spacing(1),
-    //   width: 200,
-    // },
   },
   textarea: {
     width: "100%",
@@ -36,18 +32,19 @@ export default function TextFieldSizes() {
   const classes = useStyles();
   const sendEmail = (e) => {
       e.preventDefault();
-    emailjs.sendForm('service_wqj6fcd','template_vbkgv1b', e.target, "user_6hfKyPUvvW8Eya5mbdX26")
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset();
+      emailjs.sendForm('service_wqj6fcd','template_vbkgv1b', e.target, "user_6hfKyPUvvW8Eya5mbdX26")
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
   }
   return (
     <form className={classes.root} validate autoComplete="off" onSubmit={sendEmail} name={"Contact us"}>
       <div>
-        <TextField 
+        <TextField
+          required
           label="Name"
           id="standard-size-small"
           name={"name"}
@@ -65,13 +62,15 @@ export default function TextFieldSizes() {
         name={"email"}
         fullWidth
         margin="normal"
+        required
+        type="email"
         InputLabelProps={{
           shrink: true,
         }}
         />
       </div>
       <div>
-        <TextareaAutosize className={classes.textarea} rowsMin={6} aria-label="Message" placeholder="Message" name="message" />
+        <TextareaAutosize required className={classes.textarea} rowsMin={6} aria-label="Message" placeholder="Message" name="message" />
       </div><div>
         <Button variant="contained" color="primary" type="submit">
           Send
