@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import {FooterPanelContainer, LogoStyles, HelpContainer, CopyRight} from './styles';
-import Logo from '../../images/logo4.png';
+import Logo from '../../images/svgLogo.svg';
 const FacebookIcon = (props) => 
 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32">
   <rect className="a" width="22" height="22" fill={'none'}/>
@@ -19,8 +19,8 @@ const FacebookIcon = (props) =>
     </svg>
   const LogoContainer = (props) => (
     <LogoStyles>
-      <img src={props.Logo} alt={'LOGO'} onClick={() => props.history.push('/')}/>
-      <div>An e-commerce platform for retailers to purchase agricultural input products and do more.</div>
+      <img src={props.Logo} alt={'LOGO'} onClick={() => props.history.push('/')}/> 
+      <div>Our organization structure is domain led and empowered to help provide Customers a single window to industry specific solutions. Agile industry units have embedded capabilities to enable rapid responses that provide a competitive edge to our Customers.</div>
     </LogoStyles>
   );
   const Footer = (props) => {
@@ -36,10 +36,10 @@ const FacebookIcon = (props) =>
               <ul>
                 <li>Important Links</li>
                 <li onClick={() => props.history.push('/')} ><span>Home</span></li>
-                <li onClick={() => props.history.push('/whats-we')}><span>What we</span></li>
+                <li onClick={() => props.history.push('/what-we-do')}><span>What we do</span></li>
                 <li onClick={() => props.history.push('/services')}><span>Services</span></li>
                 <li onClick={() => props.history.push('/careers')}><span>Careers</span></li>
-                <li onClick={() => props.history.push('/contact')}><span>Contact</span></li>
+                <li onClick={() => props.history.push('/contact')}><span>Contact us</span></li>
               </ul>
             </HelpContainer>
           </Grid>
@@ -47,9 +47,9 @@ const FacebookIcon = (props) =>
             <HelpContainer>
               <ul>
                 <li>Important Links</li>
-                <li><span>Join us</span></li>
-                <li><span>Facts</span></li>
-                <li><span>Customers</span></li>
+                <li onClick={() => props.history.push('/services')}><span>Customers</span></li>
+                <li onClick={() => props.history.push('/careers')}><span>Join us</span></li>
+                <li onClick={() => props.history.push('/feeds')}><span>Feeds</span></li>
               </ul>
             </HelpContainer>
           </Grid>

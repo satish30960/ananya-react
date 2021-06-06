@@ -1,31 +1,52 @@
 import styled from "styled-components"
 import {Font} from '../../helpers/constants';
+import Banner from '../../images/ebanner.png'
 const HomePageConatiner = styled.div`
   width: 100%;
   float: left;
 `;
 const HeroSection1 = styled.div`
   width: 100%;
+  background-image: url(${Banner});
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 260px;
+  @media(max-width: 600px){
+    height: 160px;
+  }
   .aboutus{
     width:100%;
     height:100%;
-    }
-    img{
-        width:100%;
-        height:100%;
-    }
-    margin-bottom: 20px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 36px;
+    font-family: ${Font};
+    text-align: center;
+  }
+  margin-bottom: 20px;
 `;
 const DesignWeDo1 =styled.div`
     width: 100%;
     margin: 40px 50px;
     display: flex;
     align-items: flex-start;
+    @media(max-width: 800px){
+      flex-direction: column;
+      margin: 40px 0px;
+      width: 100%;
+    }
     .blue-containter{
       width: 30%;
       background: #001689;
       padding: 60px 40px;
+      @media(max-width: 800px){
+        width: 90%;
+        padding: 40px 20px;
+        margin-bottom: 20px;
+      }
       >div:first-child{
         font-weight: 300;
         color: #fff;
@@ -62,6 +83,9 @@ const DesignWeDo1 =styled.div`
       margin-bottom:70px;
       font-family: ${Font};
       color: #0099a8;
+      @media(max-width: 800px){
+        width: 90%;
+      }
     }
     .missions{
       margin-top: 1.4375rem;
@@ -108,6 +132,10 @@ const WeDoListd = styled.div`
   width: calc((100% / 2) - 40px);
   float: left;
   padding: 20px;
+  @media(max-width: 800px){
+    width: 100%;
+    padding: 10px;
+  }
   .Software-text{
     width: 100%;
     @media(max-width: 700px){
@@ -182,10 +210,16 @@ const DoWeWorks =styled.div`
     margin: 0 auto;
     position: relative;
     @media(max-width: 700px){
-      width: 90%;
-      height: 200px;
+      width: 95%;
+      height: 450px;
+    }
+    @media(max-width: 700px){
+      width: 95%;
+      height: 350px;
     }
     .image{
+      width: 100%;
+      height: 100%;
       img{
         width: 100%;
         height: 100%;
@@ -213,6 +247,9 @@ const DoWeWorks =styled.div`
         margin-bottom: 1.4375rem;
         font-family: ${Font};
         color: #001689;
+        @media(max-width: 700px){
+          font-size: 22px;
+        }
       }
       h3{
         font-weight: 400;
@@ -221,6 +258,9 @@ const DoWeWorks =styled.div`
         margin-bottom: 1.4375rem;
         font-family: ${Font};
         color: #333;
+        @media(max-width: 700px){
+          font-size: 16px;
+        }
       }
     }
   }

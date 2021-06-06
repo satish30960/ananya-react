@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import Form from "./Form"
-import {HomePageConatiner, HeroSec,DoWeWorkc} from './styles';
-import MainImage from '../../images/contact.jpg';
+import {HomePageConatiner, DoWeWorkc} from './styles';
 import PermPhoneMsgIcon from '@material-ui/icons/PermPhoneMsg';
 import MailIcon from '@material-ui/icons/Mail';
 import {DoWeWork} from "../Homepage/styles";
-import MaintainImage from '../../images/awareness.png'; 
+import MaintainImage from '../../images/awareness.png';
+import {HeroSection1} from '../WhatsWe/styles';
+
 class Contact extends Component{
   rect = (color) => (
     <svg width="87" height="13" viewBox="0 0 87 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,18 +27,18 @@ class Contact extends Component{
       </svg>
     );
     heroSec = () => (
-      <HeroSec>
-      <div className="aboutu">
-      <img src={MainImage} alt={""}/>
+      <HeroSection1>
+      <div className="aboutus">
+       CONTACT US
       </div>
-    </HeroSec>
+    </HeroSection1>
     );
     DoWeWorkc = () => (
       <DoWeWorkc>
         <div className="he-text">
           <div>
           <div className="hel-text">
-          <h2>Contact Us ?</h2>
+          <h2>Contact us?</h2>
           <h1>
           Where to find us
           </h1>
@@ -79,7 +80,7 @@ class Contact extends Component{
         <div className="hel-text">
       Would You Like To Start A Project With Us?
       </div>
-      <div class="button-text">
+      <div className="button-text">
         <PermPhoneMsgIcon />
         01277725105
         </div>
@@ -92,7 +93,7 @@ class Contact extends Component{
       <HomePageConatiner>
       {this.heroSec()}
       {this.DoWeWorkc()}
-      <iframe style={{width: "100%", height: "300px"}} frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=CM13%203FR&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" aria-label="CM13 3FR"></iframe>
+      <iframe style={{width: "100%", height: "300px"}} title="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=CM13%203FR&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" aria-label="CM13 3FR"></iframe>
       {this.DoWeWork()}
     </HomePageConatiner>
     );

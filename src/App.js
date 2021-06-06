@@ -1,5 +1,5 @@
 import './App.css';
-import { HomePage, WhatsWe, Careers, Contact, Services}  from './Components';
+import { HomePage, WhatsWe, Careers, Contact, Services, CareersDetails, Feeds}  from './Components';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import MainComponent from './Components/MainComponent';
 function App() {
@@ -7,6 +7,10 @@ function App() {
     <BrowserRouter>
       <MainComponent>
         <Switch>
+          <Route
+            path={"/feeds"}
+            component={Feeds}
+          />
           <Route
             path={"/what-we-do"}
             component={WhatsWe}
@@ -18,6 +22,10 @@ function App() {
           <Route
             path={"/contact"}
             component={Contact}
+          />
+          <Route
+            path={"/careers/:id"}
+            component={CareersDetails}
           />
           <Route
             path={"/careers"}

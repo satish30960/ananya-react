@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {HeaderContainer, MenuLinks, MenuList, CustomListItem, MobileView} from './style';
-import Logo from '../../images/logo4.png';
+import Logo from '../../images/svgLogo.svg';
 import ClearIcon from '@material-ui/icons/Clear';
 import MoreIcon from '@material-ui/icons/Menu';
 class Header extends Component{
@@ -15,9 +15,7 @@ class Header extends Component{
   }
   componentDidMount() {
     const { history } = this.props;
-    console.log("history", history);
     const arr = history?.location?.pathname?.split('/');
-    console.log("arr", arr);
     this.setState({
       active: arr?.length > 0 ? arr[1] : '',
       routeArr: arr,
@@ -83,7 +81,12 @@ class Header extends Component{
             </CustomListItem>
             <CustomListItem showTab={true} active={this.state.active === 'contact'}>
               <MenuLinks onClick={() => this.navigateRoute('/contact')}>
-                Contact
+                Contact us
+              </MenuLinks>
+            </CustomListItem>
+            <CustomListItem showTab={true} active={this.state.active === 'feeds'}>
+              <MenuLinks onClick={() => this.navigateRoute('/feeds')}>
+                Feeds
               </MenuLinks>
             </CustomListItem>
           </MenuList>
@@ -96,8 +99,8 @@ class Header extends Component{
               <li onClick={() => this.navigateRoute('/')}>
                 <div className={'text'}>Home</div>
               </li>
-              <li onClick={() => this.navigateRoute('/whats-we')}>
-              <div className={'text'}>Whats We</div>
+              <li onClick={() => this.navigateRoute('/what-we-do')}>
+              <div className={'text'}>What We do</div>
               </li>
               <li  onClick={() => this.navigateRoute('/services')}>
                 <div className={'text'}>Services</div>
@@ -106,7 +109,7 @@ class Header extends Component{
                 <div className={'text'}>Careers</div>
               </li>
               <li onClick={() => this.navigateRoute('/contact')}>
-                <div className={'text'}>Contact</div>
+                <div className={'text'}>Contact us</div>
               </li>
             </ul>
           </div> : null}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="100" viewBox="0 0 101 100">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.744" y1="0.071" x2="0.236" y2="0.887" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6b5176"/>
+      <stop offset="1" stop-color="#679fcb"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.571" y1="0.054" x2="0.313" y2="0.964" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#847eb1"/>
+      <stop offset="1" stop-color="#56b8e4"/>
+    </linearGradient>
+    <clipPath id="clip-iPhone_12_12_Pro_2">
+      <rect width="101" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_12_12_Pro_2" data-name="iPhone 12, 12 Pro – 2" clip-path="url(#clip-iPhone_12_12_Pro_2)">
+    <g id="Group_1792" data-name="Group 1792" transform="translate(-9 -14)">
+      <circle id="Ellipse_68" data-name="Ellipse 68" cx="48" cy="48" r="48" transform="translate(12 16)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_67" data-name="Ellipse 67" cx="41" cy="41" r="41" transform="translate(30.342 5.344) rotate(19)" fill="url(#linear-gradient-2)"/>
+      <path id="Path_2086" data-name="Path 2086" d="M-30.743-18985.523s-11.657-43.617,31.758-35.7C-5.735-18992.033-30.743-18985.523-30.743-18985.523Z" transform="translate(106 19095)" fill="#70bae1" opacity="0.6"/>
+    </g>
+  </g>
+</svg>

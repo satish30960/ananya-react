@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Font} from '../../helpers/constants';
 import Banner from '../../images/bb1.png';
+import MBanner from '../../images/mbb1.png';
 const HomePageConatiner = styled.div`
   width: 100%;
   float: left;
@@ -9,56 +10,81 @@ const HeroSection = styled.div`
   font-family: ${Font};
   background-image: url(${Banner});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 700px;
+  width: 100%;
+  float: left;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   @media (max-width: 1400px){
     height: 600px;
-  }@media (max-width: 700px){
+  }
+  @media (max-width: 900px){
+    background-size: contain;
+    height: 500px;
+  }
+  @media (max-width: 750px){
     flex-direction: column;
+    background-image: url(${MBanner});
+    background-size: cover;
+    height: 318px;
+  }
+  @media (max-width: 500px){
+    height: 240px;
   }
   >div: first-child{
-    margin-left: 20px;
+    margin-left: 90px;
+    margin-top: 90px;
+    @media (max-width: 900px){
+      margin-top: 40px;
+    }
+    @media (max-width: 500px){
+      margin-left: 20px;
+    }
     .welcome-text{
       font-family: ${Font};
       font-size: 18px;
       line-height: 22px;
-      color: #FFFFFF;
+      color: rgba(90,83,150, 1);
       letter-spacing: 2px;
-      font-weight: 600;
+      font-weight: 500;
       margin-top: 20px;
       margin-bottom: 11px;
       @media(max-width: 500px){
         font-size: 15px;
+        margin-top: 10px;
       }
     }.des-text{
       font-family: ${Font};
       font-size: 18px;
       line-height: 22px;
-      color: #FFFFFF;
+      color: rgba(90,83,150, 1);
       letter-spacing: 2px;
       font-weight: 400;
       margin-top: 20px;
-      margin-bottom: 11px;
+      margin-bottom: 20px;
       @media(max-width: 500px){
         font-size: 15px;
+        margin-top: 10px;
       }
     }
     .hero-text{
-      font-size: 48px;
+      font-size: 40px;
       margin: 0px;
-      color: #FFFFFF;
+      color: #fff;
       font-family: ${Font};
       letter-spacing: 0px;
-      font-weight: 800;
+      font-weight: 400;
       line-height: 57px;
       word-break: break-word;
       width: 100%;
       text-transform: uppercase;
-      @media(max-width: 500px){
+      @media(max-width: 1100px){
         font-size: 25px;
+      }
+      @media(max-width: 500px){
+        font-size: 22px;
       }
       position: relative;
       .line{
@@ -71,16 +97,16 @@ const HeroSection = styled.div`
       width: 100%;
       button{
         margin-top: 0px;
-        width: 37%;
-        background-color: rgb(246, 121, 125);
-        color: rgb(255, 255, 255);
-        padding: 13px 10px;
-        border-radius: 3px;
+        width: 130px;
+        background-color: #f6797d;
+        color: #FFF;
+        padding: 8px 10px;
+        border-radius: 2px;
         border: none;
+        outline: none;
         font-size: 18px;
-        box-shadow: rgb(0 0 0 / 11%) 4px 6px 5px -1px;
         font-family: ${Font};
-        font-weight: 500;
+        font-weight: 400;
         line-height: 21px;
         text-align: center;
         text-transform: uppercase;
@@ -112,10 +138,11 @@ const HeroSection = styled.div`
       }
     }
   }
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 `;
 const HowDoWeWork = styled.div`
   width: 100%;
+  float: left;
   .help-text{
     width: 100%;
     font-family: ${Font};
@@ -143,7 +170,7 @@ const HowDoWeWork = styled.div`
     font-size: 20px;
     margin: 0 auto;
     color: rgb(37, 58, 91);
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     @media(max-width: 700px){
       text-align: center;
     }
@@ -151,6 +178,7 @@ const HowDoWeWork = styled.div`
   `;
   const DesignWeDo =styled.div`
     width: 100%; 
+    float: left;
   `;
   const WeDoList = styled.div`
   width: 100%;
@@ -289,4 +317,84 @@ const HowDoWeWork = styled.div`
   }
   }
  `;
-export {HomePageConatiner, HeroSection, HowDoWeWork,DesignWeDo,DoWeWork, WeDoList};
+ const FeedsCard = styled.div`
+    width: 80% !important;
+    float: left;
+    margin: 20px;
+    background: rgba(134, 193, 170, 0.5);
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    &:nth-child(odd){
+        background: rgba(137,149,138, 0.5);
+    }
+    .title{
+        width: 100%;
+        font-size: 18px;
+        margin: 0px;
+        color: #000;
+        font-family: ${Font};
+        line-height: 26px;
+        letter-spacing: 0px;
+        font-weight: 500;
+    }
+    .date{
+        width: 100%;
+        font-size: 14px;
+        margin: 10px 0 0;
+        color: #000;
+        font-family: ${Font};
+        letter-spacing: 0px;
+        font-weight: 300;
+    }
+    .description{
+        width: 100%;
+        font-size: 16px;
+        margin: 0px;
+        color: #000;
+        font-family: ${Font};
+        letter-spacing: 0px;
+        font-weight: 300;
+        margin: 10px 0 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(134, 193, 170, 0.2);
+        &:nth-child(odd){
+            border-bottom: 1px solid rgba(137,149,138, 0.2); 
+        }
+    }
+    .readMore {
+        display: flex;
+        padding-top: 20px;
+        align-items: center;
+        justify-content: flex-end;
+        >button{
+            font-size: 18px;
+            margin: 0px;
+            color: rgba(134, 193, 170, 0.7);
+            font-family: ${Font};
+            letter-spacing: 0px;
+            font-weight: 300;
+            background: transparent;
+            cursor: pointer;
+            border: 1px solid rgba(134, 193, 170, 0.7);
+            &:nth-child(odd){
+                border: 1px solid rgba(137,149,138, 0.7);
+                color: rgba(137,149,138, 0.7);
+                &:hover{
+                    color: rgb(137,149,138);
+                }
+            }
+            &:hover{
+                color: rgb(134, 193, 170);
+                &:nth-child(odd){
+                    color: rgb(137,149,138);
+                }
+            }
+        }
+    }
+`;
+const Feeds = styled.div`
+  width: 100%;
+  float: left;
+`;
+export {HomePageConatiner, HeroSection, HowDoWeWork,DesignWeDo,FeedsCard,DoWeWork, WeDoList, Feeds};
