@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {HeaderContainer, MenuLinks, MenuList, CustomListItem, MobileView} from './style';
-import Logo from '../../images/bubbleLogo.svg';
+import Logo from '../../images/svgLogo.svg';
 import ClearIcon from '@material-ui/icons/Clear';
 import MoreIcon from '@material-ui/icons/Menu';
 class Header extends Component{
@@ -15,9 +15,7 @@ class Header extends Component{
   }
   componentDidMount() {
     const { history } = this.props;
-    console.log("history", history);
     const arr = history?.location?.pathname?.split('/');
-    console.log("arr", arr);
     this.setState({
       active: arr?.length > 0 ? arr[1] : '',
       routeArr: arr,
@@ -58,7 +56,7 @@ class Header extends Component{
     console.log(matches);
     return (
        <HeaderContainer>
-         <div className="logo" onClick={() => this.navigateRoute('/')}><img src={Logo} alt={"logo"}/><div className="ltext">ANANYA</div></div>
+         <div className="logo" onClick={() => this.navigateRoute('/')}><img src={Logo} alt={"logo"}/></div>
          <div className="menu-List">
           <MenuList>
             <CustomListItem showTab={true} active={this.state.active === ''}>

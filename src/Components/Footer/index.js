@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import {FooterPanelContainer, LogoStyles, HelpContainer, CopyRight} from './styles';
-import Logo from '../../images/logo1.svg';
+import Logo from '../../images/svgLogo.svg';
 const FacebookIcon = (props) => 
 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32">
   <rect className="a" width="22" height="22" fill={'none'}/>

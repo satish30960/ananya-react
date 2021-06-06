@@ -7,7 +7,7 @@ class Feeds extends Component {
         this.state = { feedsData: [] }
     }
       componentDidMount(){ 
-        axios.get(`https://my-json-server.typicode.com/satish30960/ananya-react/feeds`).then((res) => {
+        axios.get(`https://my-json-server.typicode.com/satish30960/ananyaJson/feeds`).then((res) => {
           this.setState({feedsData: res.data})
         }).catch(() => {
           this.setState({feedsData: []})

@@ -1,5 +1,5 @@
 export const HeaderBackground = '#FFFFFF';
-export const FooterBackground = '#222222';
+export const FooterBackground = '#10074e';
 export const svgFillColor = '#45A735';
 export const Font = 'Rubik';
 export const ButtonBackground = '#45A735';

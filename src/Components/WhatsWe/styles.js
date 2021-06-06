@@ -1,21 +1,32 @@
 import styled from "styled-components"
 import {Font} from '../../helpers/constants';
+import Banner from '../../images/ebanner.png'
 const HomePageConatiner = styled.div`
   width: 100%;
   float: left;
 `;
 const HeroSection1 = styled.div`
   width: 100%;
+  background-image: url(${Banner});
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 260px;
+  @media(max-width: 600px){
+    height: 160px;
+  }
   .aboutus{
     width:100%;
     height:100%;
-    }
-    img{
-        width:100%;
-        height:100%;
-    }
-    margin-bottom: 20px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 36px;
+    font-family: ${Font};
+    text-align: center;
+  }
+  margin-bottom: 20px;
 `;
 const DesignWeDo1 =styled.div`
     width: 100%;

@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {CareersContainer, Filters, CareerListContainer} from './styles';
-import MainImage from '../../images/career1.png';
-import {Hero} from '../Services/styles';
 import GroupedSelect from './CustomMenu';
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
+import {HeroSection1} from '../WhatsWe/styles';
 
 class Careers extends Component{
   constructor(props){
@@ -57,11 +56,11 @@ class Careers extends Component{
     }
   }
   hero = () => (
-    <Hero>
+    <HeroSection1>
     <div className="aboutus">
-    <img src={MainImage} alt={"some"}/>
+      Careers
     </div>
-  </Hero>
+  </HeroSection1>
   );
   filters = () => (
     <Filters>

@@ -13,9 +13,8 @@ const HeaderContainer = styled.div`
     cursor: pointer;
     display: flex;
     >img{
-      width: 50px;
-      height: 120px;
-      position: relative;
+      width: auto;
+      // position: relative;
       margin-left: 40px;
     }
     .ltext{

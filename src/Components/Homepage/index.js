@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {HomePageConatiner, HeroSection, HowDoWeWork, DesignWeDo, DoWeWork, WeDoList} from './styles';
+import {HomePageConatiner, HeroSection, HowDoWeWork, DesignWeDo, DoWeWork, WeDoList, FeedsCard, Feeds} from './styles';
 import Line from '../../images/Rectangle-pink.svg';
 import MainImage from '../../images/h2.jpg';
 import DesignImage from '../../images/coode.jpg';
@@ -8,6 +8,11 @@ import CoderImage from '../../images/cood.jpg';
 import MaintainImage from '../../images/awareness.png'; 
 import SoftImage from '../../images/soft.jpg';
 import PermPhoneMsgIcon from '@material-ui/icons/PermPhoneMsg';
+import {FeedsContainer, Header} from '../Feeds/styles';
+import axios from 'axios';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const servicesArray = [
   {
@@ -46,6 +51,38 @@ const servicesArray = [
 
 
 class HomePage extends Component{
+  constructor(props) {
+    super(props);
+    this.state = { feedsData: [] }
+}
+  componentDidMount(){ 
+    axios.get(`https://my-json-server.typicode.com/satish30960/ananyaJson/feeds`).then((res) => {
+      this.setState({feedsData: res.data})
+    }).catch(() => {
+      this.setState({feedsData: []})
+    })
+  }
+getDiff = (stringDate) => {
+    let currDate = new Date();
+    let diffMs=currDate.getTime() - new Date(stringDate).getTime();
+    let sec=(diffMs/1000);
+    if(sec<60)
+        return parseInt(sec)+' second'+(parseInt(sec)>1?'s':'')+' ago';
+    let min=sec/60;
+    if(min<60)
+        return parseInt(min)+' minute'+(parseInt(min)>1?'s':'')+' ago';
+    let h=min/60;
+    if(h<24)
+        return parseInt(h)+' hour'+(parseInt(h)>1?'s':'')+' ago';
+    let d=h/24;
+    if(d<30)
+        return parseInt(d)+' day'+(parseInt(d)>1?'s':'')+' ago';
+    let m=d/30;
+    if(m<12)
+        return parseInt(m)+' month'+(parseInt(m)>1?'s':'')+' ago';
+    let y=m/12;
+    return parseInt(y)+' year'+(parseInt(y)>1?'s':'')+' ago';
+  }
   rect = (color) => (
     <svg width="87" height="13" viewBox="0 0 87 13" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_d)">
@@ -80,8 +117,8 @@ class HomePage extends Component{
         Heralding a new era for onsite IT solutions
       </div>
       <div className="buttonWrap">
-       <button>
-         SEE MORE
+       <button onClick={() => this.props.history.push('/contact')}>
+         Contact US
        </button>
       </div>
     </div>
@@ -140,6 +177,68 @@ class HomePage extends Component{
     </div>
   </DoWeWork>
 );
+DesignFeeds = (feedsData) => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+    return(
+      <FeedsContainer>
+        <Header>
+            Latest Feeds
+        </Header>
+        <Feeds>
+          <Slider {...settings}>{
+            feedsData && feedsData.length > 0 ? feedsData.map((data, index) => (<FeedsCard key={index}>
+              <div className={"title"}>
+                  {data.feedName}
+              </div>
+              <div className={"date"}>
+                  {this.getDiff(data.postDate)}
+              </div>
+              <div className="description">
+                  {data.feedDescription}
+              </div>
+              <div className="readMore">
+                  <button onClick={() => window.open(data.readMoreLink, "_blank")}>Read More</button>
+              </div>
+            </FeedsCard>)) : null}
+          </Slider>
+        </Feeds>
+      </FeedsContainer>
+    )
+ };
   render() {
     return (
        <HomePageConatiner>
@@ -147,6 +246,7 @@ class HomePage extends Component{
          {this.howDoWeWork()}
          {this.DesignWeDo()}
          {this.DoWeWork()}
+         {this.DesignFeeds(this.state.feedsData)}
        </HomePageConatiner>
     );
   }

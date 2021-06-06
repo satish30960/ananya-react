@@ -9,14 +9,14 @@ const FeedsContainer = styled.div`
 const Header = styled.div`
     width: 100%;
     float: left;
-    font-size: 36px;
+    font-size: 30px;
     margin: 0px;
     color: #000;
     font-family: ${Font};
     letter-spacing: 0px;
     font-weight: 600;
     @media(max-width: 1400px){
-        font-size: 30px;
+        font-size: 22px;
     }
     @media(max-width: 1000px){
         font-size: 26px;

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {HomePageConatiner, HeroSection1,DesignWeDo1,HeroSection2,DoWeWorks} from './styles';
-import MainImage from '../../images/aboutus4.jpg';
 import DefineImage from '../../images/DMA-8.jpg';
 import DesignImage from '../../images/whatwedoDesign.jpg';
 import DevelopImage from '../../images/DMA-12.jpg';
@@ -65,7 +64,7 @@ class WhatsWe extends Component{
     heroSection1 = () => (
       <HeroSection1>
       <div className="aboutus">
-      <img src={MainImage} alt={""}/>
+        WHAT WE DO
       </div>
     </HeroSection1>
     );

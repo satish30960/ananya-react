@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {HomePageConatiner,HowDoWeWor,Hero,DesignWeD,WeDoList, DesignWe,DesignW,WeDoLists,Design} from './styles';
-import MainImage from '../../images/our-services.jpg';
+import {HomePageConatiner,HowDoWeWor,DesignWeD,WeDoList, DesignWe,DesignW,WeDoLists,Design} from './styles';
 import DesignImage from '../../images/health.jpg';
 import DesignerImage from '../../images/development.jpg';
 import CoderImage from '../../images/financial.jpg'; 
@@ -20,7 +19,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
+import {HeroSection1} from '../WhatsWe/styles';
 const servicesArray = [
   {
     name: "Healthcare",
@@ -111,11 +110,11 @@ class Services extends Component{
         </svg>
       );
       hero = () => (
-        <Hero>
+        <HeroSection1>
         <div className="aboutus">
-        <img src={MainImage} alt={"some"}/>
+          SERVICES
         </div>
-      </Hero>
+      </HeroSection1>
       );
       DesignWeD = () => (
         <DesignWeD>
