@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import {Font} from '../../helpers/constants';
-import Banner from '../../images/ebanner.png'
+import Banner from '../../images/ebanner.jpg'
 const HomePageConatiner = styled.div`
   width: 100%;
   float: left;
@@ -26,7 +26,14 @@ const HeroSection1 = styled.div`
     font-family: ${Font};
     text-align: center;
   }
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  @media (max-width: 500px){
+    margin-bottom: 0px;
+    background-size: cover;
+    .aboutus{
+      font-weight: 400;
+    }
+  }
 `;
 const DesignWeDo1 =styled.div`
     width: 100%;

@@ -28,10 +28,10 @@ const HeroSection = styled.div`
     flex-direction: column;
     background-image: url(${MBanner});
     background-size: cover;
-    height: 318px;
+    height: 370px;
   }
   @media (max-width: 500px){
-    height: 240px;
+    height: 350px;
   }
   >div: first-child{
     margin-left: 90px;
@@ -104,7 +104,7 @@ const HeroSection = styled.div`
         border-radius: 2px;
         border: none;
         outline: none;
-        font-size: 18px;
+        font-size: 16px;
         font-family: ${Font};
         font-weight: 400;
         line-height: 21px;

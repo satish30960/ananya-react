@@ -1,11 +1,5 @@
 import React, {Component} from 'react';
-import {HomePageConatiner,HowDoWeWor,DesignWeD,WeDoList, DesignWe,DesignW,WeDoLists,Design} from './styles';
-import DesignImage from '../../images/health.jpg';
-import DesignerImage from '../../images/development.jpg';
-import CoderImage from '../../images/financial.jpg'; 
-import MaintainImage from '../../images/software.jpg'; 
-import SoftImage from '../../images/mobile.jpg';
-import HardImage from '../../images/cloud.jpg';
+import {HomePageConatiner,HowDoWeWor, DesignWe,DesignW,WeDoLists,Design} from './styles';
 import DesigImage from '../../images/client1.png';
 import DesigneImage from '../../images/client2.png';
 import CodeImage from '../../images/client3.jpg'; 
@@ -20,50 +14,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import {HeroSection1} from '../WhatsWe/styles';
-const servicesArray = [
-  {
-    name: "Healthcare",
-    image: DesignImage,
-    color: "#69c2ff",
-    bgColor: "rgba(107, 193, 251, 0.12)",
-    description: "Transformational healthcare technology and services give caregivers the tools they need to improve processes across the continuum of care."
-  },
-  {
-    name: "Development & DevOps",
-    image: DesignerImage,
-    color: "#93a987",
-    bgColor: "rgba(147, 169, 135, 0.12)",
-    description: "We help our clients by developing the product by Develop iteratively, Manage requirements, Use component architecture, Model software visually, Verify quality Control change with integration of DevOps which helps improve deployment frequency, leading to faster time to market, lower failure rate of new releases, shortened lead time between ﬁxes and faster time to recovery.",
-  },
-  {
-    name: "Financial Solutions",
-    image: CoderImage,
-    color: "#f8a887",
-    bgColor: "rgba(230, 167, 112, 0.12)",
-    description: "We help customers in procure-to-pay (P2P), and record-to-analyze (R2A), business to business(B2B), Business to Consumer (B2C) and Front Office – promising the very best-in-class finance operations for your business by bench-marking your operations to ensure top performance, reducing your total cost of service",
-  },
-  {
-    name: "Software QA",
-    image: MaintainImage,
-    color: "rgb(157,135,169)",
-    bgColor: "rgb(157,135,169,0.12)",
-    description:"We follow and adept years of matured testing advancements, continually enhance conventional testing capabilities through flexible, reliable and robust functional, automation & non-functional testing solutions.",
-  },
-  {
-    name: "Mobile Solutions",
-    image: SoftImage,
-    color: "rgb(157,135,169)",
-    bgColor: "rgb(157,135,169,0.12)",
-    description:"Mobility drives agile enterprises that can pivot as quickly as technology demands in this era of electrifying change. We offers a portfolio of tools and services for the mobile enterprise that moves with the speed of its customers.",
-  },
-  {
-    name: "Cloud Computing",
-    image: HardImage,
-    color: "rgb(157,135,169)",
-    bgColor: "rgb(157,135,169,0.12)",
-    description:"We help our customers establishing a robust private cloud solution which is not only highly available, but also highly flexible and elastic to cater to unpredictable demands and inorganic growth.",
-  },
-  ];
+import TabUI from "./TabUI";
   const serviceArray = [
     {
       image: DesigImage,
@@ -116,27 +67,7 @@ class Services extends Component{
         </div>
       </HeroSection1>
       );
-      DesignWeD = () => (
-        <DesignWeD>
-          {
-            servicesArray.map((data, index) => (
-              <WeDoList row={data.rotate ? "row-reverse" : "row"} bgColor={data.bgColor} width={index === 3 ? 1 : 0} key={index}>
-                <div className="Software-text">
-                <div className="det-text">
-                  <img src={data.image} alt={"some"}/>
-                </div>
-                  <div className="header">
-                    {data.name}
-                  </div>
-                  <div className="description">
-                    {data.description}
-                  </div>
-                </div>
-              </WeDoList>
-            ))
-          }
-     </DesignWeD>
-     );
+
       howDoWeWor = () => (
         <HowDoWeWor>
           <div className="help-text">
@@ -224,11 +155,14 @@ class Services extends Component{
           }</Slider>
         </DesignW>
    };
+
   render() {
     return (
       <HomePageConatiner>
         {this.hero()}
-        {this.DesignWeD()}
+        <TabUI/>
+        {/* {this.DesignWeD()}
+        {this.nursing()} */}
         {this.howDoWeWor()}
         {this.DesignWe()}
         {this.Design()}

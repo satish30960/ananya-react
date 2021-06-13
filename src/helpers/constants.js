@@ -1,7 +1,7 @@
 export const HeaderBackground = '#FFFFFF';
 export const FooterBackground = '#10074e';
 export const svgFillColor = '#45A735';
-export const Font = 'Rubik';
+export const Font = 'Mulish';
 export const ButtonBackground = '#45A735';
 export const BodyBackground = "#FFF";
 export const DropDownIcon = (props) => 
