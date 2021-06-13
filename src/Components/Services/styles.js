@@ -20,7 +20,7 @@ const Hero = styled.div`
 `;
 const DesignWeD =styled.div`
   width: 100%;
-  margin-bottom:8%;
+  margin-bottom:20px;
   display:flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -96,6 +96,7 @@ const DesignWeD =styled.div`
   `;
 const HowDoWeWor = styled.div`
   width: 100%;
+  float: left;
   .help-text{
     width: 100%;
     font-family: ${Font};
@@ -215,6 +216,89 @@ const DesignW = styled.div`
       }
   `;
 
+const NursingContainer = styled.div`
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 20px;
+  float: left;
+  .header{
+    width: 100%;
+    font-family: ${Font};
+    font-weight: 400;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    >svg{
+      left: 28px;
+      top: 35px;
+      position: absolute;
+    }
+    }
+  }
+  .container{
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+    @media(max-width: 900px){
+      flex-direction: column;
+    }
+    .image{
+      width: 40%;
+      float: left;
+      >img{
+        width: 85%;
+        height: 100%;
+      }
+      @media(max-width: 900px){
+        width: 90%;
+        margin: 0 auto;
+        >img{
+          width: 90%;
+          height: 100%;
+        }
+      }
+    }
+    .description{
+      width: 50%;
+      float: left;
+      .dheader{
+        width: 100%;
+        font-family: ${Font};
+        font-weight: 500;
+        font-size: 22px;
+        text-align: left;
+        margin-bottom: 10px;
+        color: rgb(36,58,90);
+      }
+      .data{
+        width: 100%;
+        font-family: ${Font};
+        text-align: left;
+        margin-bottom: 10px;
+        color: rgb(37,58,91);
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        ul{
+          li{
+            font-family: ${Font};
+            text-align: left;
+            margin-bottom: 10px;
+            color: rgb(37,58,91);
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 30px;
+          }
+        }
+      }
+      @media(max-width: 900px){
+        width: 100%;
+      }
+    }
+  }
+`;
 
-
-export {HomePageConatiner,HowDoWeWor,Hero,WeDoList,DesignWeD,DesignWe,DesignW,WeDoLists,Design};
+export {HomePageConatiner,HowDoWeWor,Hero,WeDoList,DesignWeD,DesignWe,DesignW,WeDoLists,Design, NursingContainer};
