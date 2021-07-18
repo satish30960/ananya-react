@@ -10,8 +10,12 @@ class Header extends Component{
       active: '',
       routeArr: [],
       pathname: "/",
-      isMobileMenuOpen: false
+      isMobileMenuOpen: false,
+      expandStatus:false
     }
+  }
+  expand = () => {
+    this.setState((prev) => ({expandStatus: !prev.expandStatus}));
   }
   componentDidMount() {
     const { history } = this.props;
@@ -70,9 +74,14 @@ class Header extends Component{
               </MenuLinks>
             </CustomListItem>
             <CustomListItem showTab={true} active={this.state.active === 'services'}>
-              <MenuLinks onClick={() => this.navigateRoute('/services')}>
+              <MenuLinks>
                 Services
               </MenuLinks>
+              <ul>
+                <li><a onClick={() => this.navigateRoute('/services/it')}>IT</a></li>
+                <li><a onClick={() => this.navigateRoute('/services/nursing')}>Nursing</a></li>
+                <li><a onClick={() => this.navigateRoute('/nurse-registration')}>Nurse Registration</a></li>
+              </ul>
             </CustomListItem>
             <CustomListItem showTab={true} active={this.state.active === 'careers'}>
               <MenuLinks onClick={() => this.navigateRoute('/careers')}>
@@ -102,9 +111,16 @@ class Header extends Component{
               <li onClick={() => this.navigateRoute('/what-we-do')}>
               <div className={'text'}>What We do</div>
               </li>
-              <li  onClick={() => this.navigateRoute('/services')}>
+              <li  onClick={() => this.expand()}>
                 <div className={'text'}>Services</div>
               </li>
+              {this.state.expandStatus && <><li  onClick={() => this.navigateRoute('/services/it')}>
+                <div className={'text'}>IT</div>
+              </li><li  onClick={() => this.navigateRoute('/services/nursing')}>
+                <div className={'text'}>Nursing</div>
+              </li><li  onClick={() => this.navigateRoute('/nurse-registration')}>
+                <div className={'text'}>Nurse Registration</div>
+              </li></>}
               <li onClick={() => this.navigateRoute('/careers')}>
                 <div className={'text'}>Careers</div>
               </li>

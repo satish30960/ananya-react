@@ -32,7 +32,7 @@ export default function TextFieldSizes() {
   const classes = useStyles();
   const sendEmail = (e) => {
       e.preventDefault();
-      emailjs.sendForm('service_wqj6fcd','template_vbkgv1b', e.target, "user_6hfKyPUvvW8Eya5mbdX26")
+      emailjs.sendForm('service_aecnu7m','template_e8g5su4', e.target, "user_NjRfaGVRAQ4ZMuUjMCLek")
         .then((result) => {
             console.log(result.text);
         }, (error) => {

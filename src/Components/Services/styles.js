@@ -1,9 +1,16 @@
 import styled from 'styled-components';
 import {Font} from '../../helpers/constants';
+import TextField from '@material-ui/core/TextField';
 const HomePageConatiner = styled.div`
   width: 100%;
   float: left;
   background: #f0f0f0;
+`;
+const FAQConatiner = styled.div`
+  width: 100%;
+  float: left;
+  background: #ffffff;
+  padding: 30px;
 `;
 const Hero = styled.div`
   width: 100%;
@@ -109,7 +116,7 @@ const HowDoWeWor = styled.div`
     position: relative;
     >svg{
       left: 46%;
-      top: 37px;
+      top: 42px;
       position: absolute;
       @media(max-width: 700px){
         left: 40%;
@@ -120,7 +127,7 @@ const HowDoWeWor = styled.div`
     width: 80%;
     font-family: ${Font};
     font-weight: 400;
-    text-align: center;
+    text-align: ${({left}) => left ? 'left' : 'center'};
     font-size: 20px;
     margin: 0 auto;
     color: rgb(37, 58, 91);
@@ -299,6 +306,63 @@ const NursingContainer = styled.div`
       }
     }
   }
+  .fullLine{
+    float: left;
+    width: 100%;
+    margin: 20px 0 5px;
+    .dheader{
+      width: 100%;
+      font-family: ${Font};
+      font-weight: 500;
+      font-size: 22px;
+      text-align: left;
+      margin-bottom: 10px;
+      color: rgb(36,58,90);
+    }
+    .textDetails{
+      width: 100%;
+      font-family: ${Font};
+      text-align: left;
+      margin-bottom: 10px;
+      color: rgb(37,58,91);
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
 `;
-
-export {HomePageConatiner,HowDoWeWor,Hero,WeDoList,DesignWeD,DesignWe,DesignW,WeDoLists,Design, NursingContainer};
+const CustomInputField = styled(TextField)`
+.MuiInputLabel-outlined {
+  z-index: 1;
+  transform: translate(14px, 15px) scale(1);
+  pointer-events: none;
+}
+.MuiOutlinedInput-root{
+  width: 428px;
+  @media(max-width: 450px){
+    width: 85%;
+  }
+}
+.MuiOutlinedInput-input{
+  padding: 12px;
+}
+`;
+const SelectField = styled.select`
+  width: 428px;
+  height: 43px;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.00938em;
+  padding: 0 12px;
+  border-color: #c4c4c4;
+  border-radius: 4px;
+  margin: 8px;
+  @media(max-width: 450px){
+    width: 85%;
+  }
+`;
+export {FAQConatiner, HomePageConatiner,HowDoWeWor,Hero,WeDoList,DesignWeD,DesignWe,DesignW,WeDoLists,Design, NursingContainer, SelectField, CustomInputField};

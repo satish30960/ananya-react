@@ -3,7 +3,7 @@ import {Font} from '../../helpers/constants';
 
 const FeedsContainer = styled.div`
     width: 100%;
-    padding: 20px;
+    padding: ${({margin}) => margin ? '0px' : '20px'};
     float: left;
 `;
 const Header = styled.div`

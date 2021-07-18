@@ -6,7 +6,7 @@ const FooterPanelContainer = styled.div`
   width: 100%;
   background-color: ${FooterBackground};
   padding-top: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
   color: #ffffff;
   @media(max-width: 900px){
     margin-top: 20px;

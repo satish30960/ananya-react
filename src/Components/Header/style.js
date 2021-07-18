@@ -184,9 +184,49 @@ const CustomListItem = styled.li`
         }
     }
   }
+  ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 36px;
+    background-color: white;
+    font-family: ${Font};
+    padding: 0;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 1px 1.732px 46px rgba(0,0,0,0.18);
+    
+    @media (max-width: 500px) {
+      display: none;
+      font-size: 15px;
+      top: -53px;
+      right: 133px;
+      }
+    > li {
+      text-align: left;
+      padding: 5px 0;
+      > a {
+        width: 100%;
+        display: block;
+        padding: 5px 18px 5px 10px;
+        color: #67676A;
+        cursor: pointer;
+        font-size: 15px;
+        &:hover {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
   &:hover ul {
     display: block;
-  }   
+  }
+  
+  ul > li:hover {
+    color: white;
+    background-color: #192c79;
+  }  
   
   .platform-div {
     list-style: none;
