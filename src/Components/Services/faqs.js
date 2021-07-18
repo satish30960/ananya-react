@@ -1,4 +1,5 @@
 import React from 'react';
+import {NursingContainer} from './styles';
 let involvedInOSCE = <React.Fragment>The OSCE is made up of six separate stations using simulated patients in a clinical 
 setting. Four stations are designed to test the candidate’s knowledge and understanding 
 of assessment, planning, implementation and evaluation of care. <br/>The remaining two 
@@ -106,7 +107,7 @@ expensive contingent staff.
 </React.Fragment>;
 
 
-let mnc = <React.Fragment>
+let mnc = <NursingContainer>
 1. International nurse recruitment solves the nursing supply and demand <br/>
 2. The Nursing and Midwifery Council (NMC) is the regulator for nursing and 
 midwifery professions in the UK.<br/>
@@ -114,7 +115,28 @@ midwifery professions in the UK.<br/>
 community public health nurses eligible to practise within the UK.<br/>
 4. Your application to work as a registered nurse in the UK is considered by 
 them.
-</React.Fragment>;
+
+<div className={"fullLines"}>
+University Resources
+<div className={'textDetails'}>
+    Part 2 of the test is called the OSCE, which will act out scenarios 
+    The University of Northampton's website has some useful 
+    information and resources to help you understand and prepare for 
+    your OSCE:<br/>
+    • <a href={'https://www.northampton.ac.uk/about-us/services-and-facilities/nmc-test-of-competence/nmc-test-of-competence-preparation/'} target={'_blank'}>NMC Test of Competence Preparation</a><br/>
+    • <a href={'https://www.northampton.ac.uk/about-us/services-and-facilities/nmc-test-of-competence/nmc-test-of-competence-faqs/'} target={'_blank'}>FAQs for candidates of NMC Test of Competence Part 2 (OSCE)</a><br/>
+    Oxford Brookes University's website also has some useful 
+    information and resources about OSCE:<br/>
+    • <a href={'https://www.brookes.ac.uk/nmc-test-of-competence/about/'} target={'_blank'}>About the Objective Structured Clinical Examination (OSCE)</a> (In 
+    particular see the candidate handbook)<br/>
+    • <a href={'https://www.brookes.ac.uk/nmc-test-of-competence/frequently-asked-questions/'} target={'_blank'}>Frequently asked questions</a><br/>
+    In addition, you can also find information on the University of 
+    Ulster's website:<br/>
+    • <a href={'https://www.ulster.ac.uk/nmc-competence-test-centre'} target="_blank">NMC Competence Test Centre (CTC)</a><br/>
+    • <a href={'https://www.ulster.ac.uk/faculties/life-and-health-sciences/nmc-competence-test-centre/supporting-documentation'} target="_blank">Supporting documentation and candidate information booklet</a><br/>
+</div>
+</div>
+</NursingContainer>;
 
 
 let ilets = <React.Fragment>
@@ -132,7 +154,7 @@ language requirement to work in the UK.
 let cbt = <React.Fragment>
 1. This is a test of your theoretical practice-based nursing knowledge.<br/>
 2. This multiple-choice test and can be taken at test centres around the world.<br/>
-3. Beeline consulting group will provide you training materials for the CBT.
+3. We will provide you training materials for the CBT.
 </React.Fragment>;
 
 let osce = <React.Fragment>
@@ -216,10 +238,6 @@ export const FAQs= [
         'description': 'The objective structured clinical examination (OSCE) is a practical exam for nurses and midwifes trained outside the European Union (EU) / European Economic Area (EEA) designed to test theoretical knowledge of nursing applied to clinical practice in the UK'
     },
     {
-        'title': 'What is involved in the OSCE?',
-        'description': involvedInOSCE
-    },
-    {
         'title': 'Why do you need to take OSCE?',
         'description': 'The OSCE is designed to assess whether you can demonstrate competency and confidently apply your professional nursing knowledge to the clinical environment safely and effectively in the United Kingdom.'
     },
@@ -228,8 +246,8 @@ export const FAQs= [
         'description': 'The questions in the OSCE will relate to current evidence-based practice in the United Kingdom. The equipment you will use in the OSCE will be the equipment currently used across the United Kingdom.'
     },
     {
-        'title': 'Where can you take the OSCE?',
-        'description': Wherecanyoutake
+        'title': 'Who handles the immigration process?',
+        'description': 'We manages the immigration process for all the nurses you hire. All applicants arrive at your facility with proper work visas and necessary immigration documents.'
     },
     {
         'title': 'What can you expect on test day? Dress Code',
@@ -248,10 +266,6 @@ export const FAQs= [
         'description': examResultsText
     },
     {
-        'title': 'How many times can you take the OSCE?',
-        'description': ManyTimes
-    },
-    {
         'title': 'Why hire nurses from overseas?',
         'description': hireNurses
     },
@@ -260,12 +274,8 @@ export const FAQs= [
         'description': benefits
     },
     {
-        'title': 'What are the process steps to work in the UK?',
-        'description': workinUK
-    },
-    {
-        'title': 'What is the NMC?',
-        'description': mnc
+        'title': 'How much money should I take?',
+        'description': money
     },
     {
         'title': 'What is the difference between IELTS & OET',
@@ -292,16 +302,28 @@ export const FAQs= [
         'description': band
     },
     {
-        'title': 'How much money should I take?',
-        'description': money
+        'title': 'What is involved in the OSCE?',
+        'description': involvedInOSCE
     },
     {
-        'title': 'Who handles the immigration process?',
-        'description': 'Beeline consulting group manages the immigration process for all the nurses you hire. All applicants arrive at your facility with proper work visas and necessary immigration documents.'
+        'title': 'How many times can you take the OSCE?',
+        'description': ManyTimes
+    },
+    {
+        'title': 'Where can you take the OSCE?',
+        'description': Wherecanyoutake
     },
     {
         'title': 'Who handles the Relocation Process?',
-        'description': 'Beeline Consulting group works closely with clients to coordinate the arrival of their international nurses.We arrange flights, airport pickup, temporary housing, transportation, setting up a bank accounts and other essential tasks. We make sure every nurse settles in successfully into their new job and community'
+        'description': 'We works closely with clients to coordinate the arrival of their international nurses.We arrange flights, airport pickup, temporary housing, transportation, setting up a bank accounts and other essential tasks. We make sure every nurse settles in successfully into their new job and community'
+    },
+    {
+        'title': 'What is the NMC?',
+        'description': mnc
+    },
+    {
+        'title': 'What are the process steps to work in the UK?',
+        'description': workinUK
     },
     {
         'title': 'How can you prepare for your OSCE?',

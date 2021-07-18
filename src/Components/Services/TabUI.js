@@ -141,6 +141,45 @@ function DesignWeUI() {
     );
     return(
     <NursingContainer>
+      <div className={"combine"}>
+        <div className={"fullLine"}>
+          <div className={"dheader"}>We’re All About You</div>
+          <div className={'textDetails'}>
+              Your Career, Your Family, Your World<br/>
+              We help you expand your nursing & Student career and 
+              accomplish your dreams as a nurse in the UK and Ireland
+              We’ll guide you through the recruitment, credentialing, immigration, licensing and 
+              relocation process.<br/>
+              We understand that moving to another country can be a stressful experience. We’re 
+              here to make it as easy as possible.<br/>
+              When you register with us, your consultant will tailor a 
+              recruitment plan to your specific needs, ensuring that you’re placed into nothing 
+              short of your ideal nursing position & University.<br/>
+              With ample of experience, you can rest assured that we’ll provide you the advice, 
+              information and support you need to secure your dream job abroad.<br/>
+              Think about where you are today and where you’d like to be. If living and working 
+              abroad is part of your plans, We can guide you every step of 
+              the way!
+          </div>
+        </div>
+        <div className={"fullLine"}>
+          <div className={"dheader"}>What We Offer</div>
+          <div className={'textDetails'}>
+            Finding the right nursing job and good university has never been easier<br/>
+            Nursing & Student Careers in the UK & Ireland
+          </div>
+          <div className="dheader">
+            Why Work Abroad
+          </div>
+          <div className="textDetails">
+            Learn New Skills & Accomplish Your Dreams<br/>
+            • Competitive Salary & Benefits<br/>
+            • Career Advancement Opportunities<br/>
+            • Valued & Respected for your Skills<br/>
+            • Better Quality of Life for your Family
+          </div>
+        </div>
+      </div>
       <div className={"container"}>
         <div className={"image"}>
           <img src={NursingImage} alt={"Nursing"}/>
@@ -165,7 +204,7 @@ function DesignWeUI() {
            </div>
         </div>
       </div>
-      <div className={"fullLine"}>
+      <div className={"fullLines"}>
         <div className={'textDetails'}>
           If you trained within the EU or EEA, you would only have to 
           complete the OSCE if you failed to meet certain standards or 
@@ -173,7 +212,7 @@ function DesignWeUI() {
           those who Trained in the EU or EEA for more details
         </div>
       </div>
-      <div className={"fullLine"}>
+      <div className={"fullLines"}>
         <div className={"dheader"}>Part 1: Computer based test</div>
         <div className={'textDetails'}>
           Part 1 is a computer based test, based of 120 multiple-choice 
@@ -185,7 +224,7 @@ function DesignWeUI() {
           Competence, Part 1: Pearson VUE</a>.
         </div>
       </div>
-      <div className={"fullLine"}>
+      <div className={"fullLines"}>
         <div className={"dheader"}>Part 2: The OSCE exam (Objective Structured Clinical Examination)</div>
         <div className={'textDetails'}>
         Part 2 of the test is called the OSCE, which will act out scenarios 
@@ -198,73 +237,7 @@ function DesignWeUI() {
         • Ulster University
         </div>
       </div>
-      <div className={"fullLine"}>
-        <div className={"dheader"}>University Resources</div>
-        <div className={'textDetails'}>
-          Part 2 of the test is called the OSCE, which will act out scenarios 
-          The University of Northampton's website has some useful 
-          information and resources to help you understand and prepare for 
-          your OSCE:<br/>
-          • <a href={'https://www.northampton.ac.uk/about-us/services-and-facilities/nmc-test-of-competence/nmc-test-of-competence-preparation/'} target={'_blank'}>NMC Test of Competence Preparation</a><br/>
-          • <a href={'https://www.northampton.ac.uk/about-us/services-and-facilities/nmc-test-of-competence/nmc-test-of-competence-faqs/'} target={'_blank'}>FAQs for candidates of NMC Test of Competence Part 2 (OSCE)</a><br/>
-          Oxford Brookes University's website also has some useful 
-          information and resources about OSCE:<br/>
-          • <a href={'https://www.brookes.ac.uk/nmc-test-of-competence/about/'} target={'_blank'}>About the Objective Structured Clinical Examination (OSCE)</a> (In 
-          particular see the candidate handbook)<br/>
-          • <a href={'https://www.brookes.ac.uk/nmc-test-of-competence/frequently-asked-questions/'} target={'_blank'}>Frequently asked questions</a><br/>
-          In addition, you can also find information on the University of 
-          Ulster's website:<br/>
-          • <a href={'https://www.ulster.ac.uk/nmc-competence-test-centre'} target="_blank">NMC Competence Test Centre (CTC)</a><br/>
-          • <a href={'https://www.ulster.ac.uk/faculties/life-and-health-sciences/nmc-competence-test-centre/supporting-documentation'} target="_blank">Supporting documentation and candidate information booklet</a><br/>
-        </div>
-      </div>
-      <HowDoWeWor left={1}>
-          <div className="help-text">
-            We’re All About You
-            {rect()}
-          </div>
-          <div className="desc-text">
-            Your Career, Your Family, Your World<br/>
-            Let Beeline Consulting Group help you expand your nursing & Student career and 
-            accomplish your dreams as a nurse in the UK and Ireland
-            We’ll guide you through the recruitment, credentialing, immigration, licensing and 
-            relocation process.<br/>
-            We understand that moving to another country can be a stressful experience. We’re 
-            here to make it as easy as possible.<br/>
-            When you register with Beeline Consulting group, your consultant will tailor a 
-            recruitment plan to your specific needs, ensuring that you’re placed into nothing 
-            short of your ideal nursing position & University.<br/>
-            With ample of experience, you can rest assured that we’ll provide you the advice, 
-            information and support you need to secure your dream job abroad.<br/>
-            Think about where you are today and where you’d like to be. If living and working 
-            abroad is part of your plans Beeline Consulting group can guide you every step of 
-            the way!
-          </div>
-      </HowDoWeWor>
-      <HowDoWeWor>
-          <div className="help-text">
-            What We Offer
-            {rect()}
-          </div>
-          <div className="desc-text">
-            Finding the right nursing job and good university has never been easier<br/>
-            Nursing & Student Careers in the UK & Ireland
-          </div>
-      </HowDoWeWor>
-      <HowDoWeWor left={1}>
-          <div className="help-text">
-            Why Work Abroad
-            {rect()}
-          </div>
-          <div className="desc-text">
-            Learn New Skills & Accomplish Your Dreams<br/>
-            • Competitive Salary & Benefits<br/>
-            • Career Advancement Opportunities<br/>
-            • Valued & Respected for your Skills<br/>
-            • Better Quality of Life for your Family
-          </div>
-      </HowDoWeWor>
-      <HowDoWeWor left={1}>
+      {/* <HowDoWeWor left={1}>
           <div className="help-text">
             FAQ's
             {rect()}
@@ -272,7 +245,7 @@ function DesignWeUI() {
           <div className="desc-text">
             <FAQToggler/>
           </div>
-      </HowDoWeWor>
+      </HowDoWeWor> */}
     </NursingContainer>
     );
 }
