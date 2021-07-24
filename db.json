@@ -8,7 +8,7 @@
             "jobType": "Contract",
             "jobDescription": [
                 "The Quality Assurance Team's mission is to drive quality into all software products produced by/or on behalf of Cancer Research UK.  The team is striving to enhance testing service throughout the project lifecycle and ultimately assist Technology in improving the quality of product we deliver to our customers, whilst pushing shift left forward in the lifecycle.",
-                "As a CRM QA Lead in the team, you will form a key part of a cross-functional product ream responsible for delivering a new cloud-based CRM platform. You will adopt QA practices that align with Agile principles and push the concern of testing as early in the development lifecycle as possible. You will own authoring and the execution of test plan, test cases and testing at every stage of the lifecycle. You will have a significant impact in the quality and delivery speed of our software, most importantly our customers. You will work closely with Implementation Partners, developers, product managers, and other QA in order to ensure the new CRM features we deliver to our customers have a high level of quality. In addition, you will also have the opportunity to propose improvements to our existing processes and automated tools in order to improve the team’s speed, quality and efficiency. ",
+                "As a CRM QA Lead in the team, you will form a key part of a cross-functional product ream responsible for delivering a new cloud-based CRM platform. You will adopt QA practices that align with Agile principles and push the concern of testing as early in the development lifecycle as possible. You will own authoring and the execution of test plan, test cases and testing at every stage of the lifecycle. You will have a significant impact in the quality and delivery speed of our software, most importantly our customers. You will work closely with Implementation Partners, developers, product managers, and other QA in order to ensure the new CRM features we deliver to our customers have a high level of quality. In addition, you will also have the opportunity to propose improvements to our existing processes and automated tools in order to improve the team’s speed, quality and efficiency. "
             ],
             "mandatorySkills": [
                 "Defining the enterprise test strategy for the cloud-based CRM platform that aligns with the Agile/DevOps culture",
@@ -20,7 +20,7 @@
                 "Review design artefacts for testability and define overall testing plans",
                 "Ambassador for TDD, BDD and ATDD models",
                 "Evaluating and integrate open source and in house developed toolsets.",
-                "Line-manage QA Engineers, coaching them to develop their skills and behaviours and develop their careers. Sharing testing knowledge and providing guidance and support.",
+                "Line-manage QA Engineers, coaching them to develop their skills and behaviours and develop their careers. Sharing testing knowledge and providing guidance and support."
             ],
             "technicalSkill":[
                 "Extensive testing experience of cloud-based CRM platforms preferably Salesforce",
@@ -29,7 +29,7 @@
                 " Practical knowledge of non-functional testing types such as accessibility, performance and security testing for CRM platforms",
                 "Skilled in the design of acceptance tests.",
                 "Line management and career coaching experience",
-                "Passion for exploratory testing.",
+                "Passion for exploratory testing."
             ],
             "additionalInfo": [
                 "Support to learn and time to work on your personal objectives (access to Pluralsight)",
