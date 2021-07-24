@@ -2,6 +2,52 @@
     "careers": [
         {
             "id": 1,
+            "roleName": "Salesforce CCRM - QA Lead",
+            "postedDate": "07/23/2021",
+            "location": "London",
+            "jobType": "Contract",
+            "jobDescription": [
+                "The Quality Assurance Team's mission is to drive quality into all software products produced by/or on behalf of Cancer Research UK.  The team is striving to enhance testing service throughout the project lifecycle and ultimately assist Technology in improving the quality of product we deliver to our customers, whilst pushing shift left forward in the lifecycle.",
+                "As a CRM QA Lead in the team, you will form a key part of a cross-functional product ream responsible for delivering a new cloud-based CRM platform. You will adopt QA practices that align with Agile principles and push the concern of testing as early in the development lifecycle as possible. You will own authoring and the execution of test plan, test cases and testing at every stage of the lifecycle. You will have a significant impact in the quality and delivery speed of our software, most importantly our customers. You will work closely with Implementation Partners, developers, product managers, and other QA in order to ensure the new CRM features we deliver to our customers have a high level of quality. In addition, you will also have the opportunity to propose improvements to our existing processes and automated tools in order to improve the team’s speed, quality and efficiency. ",
+            ],
+            "mandatorySkills": [
+                "Defining the enterprise test strategy for the cloud-based CRM platform that aligns with the Agile/DevOps culture",
+                "Lead all QA activities within the CRM delivery teams to ensure the concern of quality is understood by all team members",
+                "Collaboratively work with Implementation Partner and internal delivery team to define, develop and deliver test automation solutions for the CRM platform",
+                "Being an advocate for quality and encouraging developers at all levels to write high quality, testable software.",
+                "Helping on our journey to CI/CD",
+                " Liaising with business stakeholders supporting end-user activity, such as user acceptance testing",
+                "Review design artefacts for testability and define overall testing plans",
+                "Ambassador for TDD, BDD and ATDD models",
+                "Evaluating and integrate open source and in house developed toolsets.",
+                "Line-manage QA Engineers, coaching them to develop their skills and behaviours and develop their careers. Sharing testing knowledge and providing guidance and support.",
+            ],
+            "technicalSkill":[
+                "Extensive testing experience of cloud-based CRM platforms preferably Salesforce",
+                "Experience working on large-scale CRM migration projects",
+                "Practical knowledge of test automation tools/frameworks for CRM platforms preferably Provar",
+                " Practical knowledge of non-functional testing types such as accessibility, performance and security testing for CRM platforms",
+                "Skilled in the design of acceptance tests.",
+                "Line management and career coaching experience",
+                "Passion for exploratory testing.",
+            ],
+            "additionalInfo": [
+                "Support to learn and time to work on your personal objectives (access to Pluralsight)",
+                "Platform to develop your testing knowledge within our QA Community"
+            ],
+            "desiredSkills": [
+                "Exceptional attention to detail required",
+                "An enthusiasm for new technologies with the ability to adapt and learn Has the confidence and initiative to evolve ideas and bring together pieces of work to produce changes",
+                "Interest in all things testing, e.g. attended a recent conference/meetup, written a testing blog or shared your opinion on twitter"
+            ],
+            "qualification": [
+                "Educated to at least graduate level (e.g. Bachelor Of Engineering, B-Tech) or equivalent is essential."
+            ],
+            "salary": "",
+            "expiredStatus": false
+        },
+        {
+            "id": 1,
             "roleName": "Java Developer",
             "postedDate": "05/15/2020",
             "location": "London",
@@ -102,6 +148,7 @@
     ],
     "jobType":[
         "Full Time",
-        "Part Time"
+        "Part Time",
+        "Contract"
     ]
 }
