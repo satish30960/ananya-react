@@ -320,19 +320,17 @@ const HowDoWeWork = styled.div`
  const FeedsCard = styled.div`
     width: 80% !important;
     float: left;
-    margin: 20px;
-    background: rgba(134, 193, 170, 0.5);
+    margin: ${({margin}) => margin ? '0px' : '20px'};
     padding: 20px;
     border-radius: 6px;
-    margin-bottom: 20px;
-    &:nth-child(odd){
-        background: rgba(137,149,138, 0.5);
-    }
+    // &:nth-child(odd){
+    //     background: rgba(16,7,78,0.5);
+    // }
     .title{
         width: 100%;
         font-size: 18px;
         margin: 0px;
-        color: #000;
+        color: #fff;
         font-family: ${Font};
         line-height: 26px;
         letter-spacing: 0px;
@@ -396,5 +394,7 @@ const HowDoWeWork = styled.div`
 const Feeds = styled.div`
   width: 100%;
   float: left;
+  background: rgba(16,7,78,0.8);
+  cursor: pointer;
 `;
 export {HomePageConatiner, HeroSection, HowDoWeWork,DesignWeDo,FeedsCard,DoWeWork, WeDoList, Feeds};

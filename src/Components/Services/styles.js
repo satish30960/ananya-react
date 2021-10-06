@@ -1,9 +1,17 @@
 import styled from 'styled-components';
 import {Font} from '../../helpers/constants';
+import TextField from '@material-ui/core/TextField';
 const HomePageConatiner = styled.div`
   width: 100%;
   float: left;
   background: #f0f0f0;
+`;
+const FAQConatiner = styled.div`
+  width: 100%;
+  float: left;
+  background: #ffffff;
+  padding: 0px 12px;
+  margin: 12px;
 `;
 const Hero = styled.div`
   width: 100%;
@@ -109,7 +117,7 @@ const HowDoWeWor = styled.div`
     position: relative;
     >svg{
       left: 46%;
-      top: 37px;
+      top: 42px;
       position: absolute;
       @media(max-width: 700px){
         left: 40%;
@@ -120,7 +128,7 @@ const HowDoWeWor = styled.div`
     width: 80%;
     font-family: ${Font};
     font-weight: 400;
-    text-align: center;
+    text-align: ${({left}) => left ? 'left' : 'center'};
     font-size: 20px;
     margin: 0 auto;
     color: rgb(37, 58, 91);
@@ -221,6 +229,39 @@ const NursingContainer = styled.div`
   margin: 20px 0;
   padding: 0 20px;
   float: left;
+  .combine{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .fullLine{
+      float: left;
+      width: 45%;
+      @media(max-width: 500px){
+        width: 100%;
+      }
+      .dheader{
+        width: 100%;
+        font-family: ${Font};
+        font-weight: 600;
+        font-size: 22px;
+        text-align: left;
+        margin-bottom: 10px;
+        color: rgb(36,58,90);
+      }
+      .textDetails{
+        width: 100%;
+        font-family: ${Font};
+        text-align: left;
+        margin-bottom: 10px;
+        color: rgb(37,58,91);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: justify;
+      }
+    }  
+  }
   .header{
     width: 100%;
     font-family: ${Font};
@@ -267,7 +308,7 @@ const NursingContainer = styled.div`
       .dheader{
         width: 100%;
         font-family: ${Font};
-        font-weight: 500;
+        font-weight: 600;
         font-size: 22px;
         text-align: left;
         margin-bottom: 10px;
@@ -279,7 +320,7 @@ const NursingContainer = styled.div`
         text-align: left;
         margin-bottom: 10px;
         color: rgb(37,58,91);
-        font-weight: 300;
+        font-weight: 500;
         font-size: 16px;
         line-height: 30px;
         ul{
@@ -288,7 +329,7 @@ const NursingContainer = styled.div`
             text-align: left;
             margin-bottom: 10px;
             color: rgb(37,58,91);
-            font-weight: 300;
+            font-weight: 400;
             font-size: 16px;
             line-height: 30px;
           }
@@ -299,6 +340,99 @@ const NursingContainer = styled.div`
       }
     }
   }
+  .fullLines{
+    float: left;
+    width: 100%;
+    .dheader{
+      width: 100%;
+      font-family: ${Font};
+      font-weight: 600;
+      font-size: 22px;
+      text-align: left;
+      margin-bottom: 10px;
+      color: rgb(36,58,90);
+    }
+    .textDetails{
+      width: 100%;
+      font-family: ${Font};
+      text-align: left;
+      margin-bottom: 10px;
+      color: rgb(37,58,91);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+`;
+const CustomInputField = styled(TextField)`
+.MuiInputLabel-outlined {
+  z-index: 1;
+  transform: translate(14px, 15px) scale(1);
+  pointer-events: none;
+}
+.MuiOutlinedInput-root{
+  width: 428px;
+  @media(max-width: 450px){
+    width: 85%;
+  }
+}
+.MuiOutlinedInput-input{
+  padding: 12px;
+}
+`;
+const SelectField = styled.select`
+  width: 428px;
+  height: 43px;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.00938em;
+  padding: 0 12px;
+  border-color: #c4c4c4;
+  border-radius: 4px;
+  margin: 8px;
+  @media(max-width: 450px){
+    width: 85%;
+  }
 `;
 
-export {HomePageConatiner,HowDoWeWor,Hero,WeDoList,DesignWeD,DesignWe,DesignW,WeDoLists,Design, NursingContainer};
+const FaqList = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  .fullLine{
+    float: left;
+    width: calc(95% / 3);
+    padding-bottom: 20px;
+    @media(max-width: 500px){
+      width: 100%;
+    }
+    .dheader{
+      width: 100%;
+      font-family: ${Font};
+      font-weight: bold;
+      font-size: 14px;
+      text-align: left;
+      margin-bottom: 10px;
+      color: rgb(36,58,90);
+    }
+    .textDetails{
+      width: 85%;
+      font-family: ${Font};
+      text-align: left;
+      margin-bottom: 10px;
+      color: rgb(37,58,91);
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 30px;
+      text-align: justify;
+    }
+  } 
+`;
+export {FaqList, FAQConatiner, HomePageConatiner,HowDoWeWor,Hero,WeDoList,DesignWeD,DesignWe,DesignW,WeDoLists,Design, NursingContainer, SelectField, CustomInputField};

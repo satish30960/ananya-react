@@ -2,6 +2,8 @@ import './App.css';
 import { HomePage, WhatsWe, Careers, Contact, Services, CareersDetails, Feeds}  from './Components';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import MainComponent from './Components/MainComponent';
+import NursingForm from './Components/Services/NursingForm';
+import FAQLIST from './Components/Services/FAQLIST';
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +18,7 @@ function App() {
             component={WhatsWe}
           />
           <Route
-            path={"/services"}
+            path={"/services/:id"}
             component={Services}
           />
           <Route
@@ -30,6 +32,14 @@ function App() {
           <Route
             path={"/careers"}
             component={Careers}
+          />
+          <Route
+            path={"/nurse-registration"}
+            component={NursingForm}
+          />
+          <Route
+            path={"/nursing-faq"}
+            component={FAQLIST}
           />
           <Route
             path={"/"}

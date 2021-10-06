@@ -113,9 +113,7 @@ getDiff = (stringDate) => {
           <img src={Line} alt={"lines"}/>
         </div>
       </div>
-      <div className="des-text">
-        Heralding a new era for onsite IT solutions
-      </div>
+      <div className="des-text"/>
       <div className="buttonWrap">
        <button onClick={() => this.props.history.push('/contact')}>
          Contact US
@@ -179,13 +177,13 @@ getDiff = (stringDate) => {
 );
 DesignFeeds = (feedsData) => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
@@ -214,24 +212,15 @@ DesignFeeds = (feedsData) => {
     ]
   };
     return(
-      <FeedsContainer>
-        <Header>
+      <FeedsContainer margin={1} onClick={() => this.props.history.push('/feeds')}>
+        {/* <Header>
             Latest Feeds
-        </Header>
-        <Feeds>
+        </Header> */}
+        <Feeds bgColor={1}>
           <Slider {...settings}>{
-            feedsData && feedsData.length > 0 ? feedsData.map((data, index) => (<FeedsCard key={index}>
+            feedsData && feedsData.length > 0 ? feedsData.map((data, index) => (<FeedsCard key={index} margin={1}>
               <div className={"title"}>
                   {data.feedName}
-              </div>
-              <div className={"date"}>
-                  {this.getDiff(data.postDate)}
-              </div>
-              <div className="description">
-                  {data.feedDescription}
-              </div>
-              <div className="readMore">
-                  <button onClick={() => window.open(data.readMoreLink, "_blank")}>Read More</button>
               </div>
             </FeedsCard>)) : null}
           </Slider>

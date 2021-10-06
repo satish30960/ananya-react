@@ -58,7 +58,7 @@ class Careers extends Component{
   hero = () => (
     <HeroSection1>
     <div className="aboutus">
-      Careers
+      CAREERS
     </div>
   </HeroSection1>
   );
