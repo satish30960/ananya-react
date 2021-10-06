@@ -1,6 +1,61 @@
 {
     "careers": [
         {
+   "id":2,
+   "roleName":"Full Stack Software Engineer",
+   "postedDate":"10/05/2020",
+   "location":"London",
+   "jobType":"Full Time",
+   "jobDescription":[
+      "Full stack developer with experience in CI/CD deployment, Cloud Foundry and Angular 9+, Java 8+, Springboot and oracle database development"
+   ],
+   "mandatorySkills":[
+      "Work with a global team to enhance Graphite UI Operational Workstation.",
+      "Understanding Business Requirements and Functional Specifications..",
+      "Work with business/product to document high level and detailed requirements",
+      "Providing estimates for required development",
+      "Creation/ update of Detailed Design Specifications, program specifications for n-tier & micro service applications",
+      "Develop unit tests and end to end tests using frameworks like Junit, cucumber & selenium",
+      "Providing technical support for User Acceptance Testing",
+      "Ensure technical documentation accurately reflects software components developed and delivered",
+      "Ensure adherence to continuous improvement practices as required to meet quality / time to market imperatives ",
+      "Creation of Implementation/ Back out Plans and Support Handover Documents",
+      "Providing technical support for Production Implementations, and post-implementation support during implementation warranty period"
+   ],
+   "technicalSkill":[
+      "Proven hands on experience in Java 8 (and above), J2EE, Spring Framework, web services, micro services (REST), hibernate.",
+      "Proven hands on experience in JavaScript, HTML/CSS. and in Java Script framework React/Angular/JQuery",
+      "Strong analysis & problem solving skills. Strong in fundamentals like data structures, algorithms.",
+      "Strong experience in using RDBMS (Oracle). ",
+      "Knowledge of No-SQL database technologies; such as Apache Cassandra or Elastic Search",
+      "Familiarity with ELK Stack (Elastic search, logstash, Kibana) for monitoring",
+      "Apache Tomcat",
+      "Experience working on mission critical high performance platforms which have low latency/response times",
+      "Experience in fine tuning application response / performance testing. Experience in using tools like JMeter/JProbe etc.",
+      "Batch/File Handling",
+      "GIT",
+      "Excellent communication skills - both verbal and written",
+      "Ability to work independently with limited supervision"
+   ],
+   "additionalInfo":[
+      
+   ],
+   "desiredSkills":[
+      "Basic understanding of distributed caching (gemfire/redis), Cloud (AWS or GCP) offerings.",
+      " Basic understanding of CI/CD, experience of using Jenkins/Jules",
+      "Basic understanding of infrastructure, deployment architecture - webserver, app server, database server, load balancer, HA setup, Sustained Resiliency",
+      "Hands on experience in using build automation tools like maven or gradle",
+      "Experience working with a Distributed Cache (Gemfire, Hazel, Memcache)",
+      "Distributed messaging experience such as Kafka",
+      "Understanding of Docker, Kubernete"
+   ],
+   "qualification":[
+      
+   ],
+   "salary":"Salary: £90,000 per year",
+   "expiredStatus":false
+},
+        {
             "id": 1,
             "roleName": "Salesforce CRM - QA Lead",
             "postedDate": "07/23/2021",
@@ -45,61 +100,7 @@
             ],
             "salary": "",
             "expiredStatus": false
-        },
-        {
-            "id": 2,
-            "roleName": "Java Developer",
-            "postedDate": "05/15/2020",
-            "location": "London",
-            "jobType": "Full Time",
-            "jobDescription": [
-                "Carrying out development in accordance with the agreed requirements and development standards",
-                "Testing of products in accordance with the test strategy to ensure that they are fit for purpose",
-                "Assisting the Team Leader in examining packages of work and giving realistic timescales for completion",
-                "Completion of work allocated within agreed time, cost and quality criteria and providing progress reports on assigned work as required",
-                "Management and control of problems and change within their area of responsibility as requested by the Team Leader, including negotiation with other teams as necessary",
-                "Prompt escalation of problems, issues and risks as necessary",
-                "Playing an active part in Process improvement, awareness of and compliance with all relevant quality processes and procedures, including completion of all the specified quality records in order to be successful the candidate will be familiar with FMSD strategy and will work to achieve those business objectives."
-            ],
-            "mandatorySkills": [
-                "Successfully manage themselves during the project lifecycle.",
-                "Identify and mitigate risks that would impact the failure of the overall project and success.",
-                "Effectively engage with multiple stakeholders and vendors on a regular basis.",
-                "Must have hands-on Coding experience",
-                "Must have worked on 2-3 Java Spring implementations",
-                "Good knowledge of Spring Boot, Spring Integration, Spring Data",
-                "Excellent analysis skills",
-                "Strong and clear communication and presentation skills",
-                "Self-motivated and enthusiastic",
-                "Knowledge of the Scala programming language and the Akka framework.",
-                "Experience as an open-source contributor and/or speaker"
-            ],
-            "technicalSkill":[
-                "Java 11",
-                "Spring Boot",
-                "MySQL",
-                "Oracle /Mongo Database",
-                "Linux",
-                "SOAP",
-                "Restful Web Services",
-                "JMS (RabbitMQ & WebSphere)",
-                "UI experience",
-                "Batch/File Handling",
-                "GIT",
-                "WebSphere",
-                "IBM DMS tool experience"
-            ],
-            "additionalInfo": [],
-            "desiredSkills": [
-                "Successful candidates would ideally also demonstrate: <br/>An understanding of Risk Management.",
-                "Strong experience in scripting languages, particularly Python Ability to code test tooling in Java Understanding of, and experience in non-functional testing, particularly around performance testing of latency metrics."
-            ],
-            "qualification": [
-                "Educated to at least graduate level (e.g. Bachelor Of Engineering, B-Tech) or equivalent is essential."
-            ],
-            "salary": "Salary: £33,000 to £35,000 per year",
-            "expiredStatus": false
-        }     
+        }    
     ],
     "location":[
         "London"
