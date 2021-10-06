@@ -2,6 +2,49 @@
     "careers": [
         {
    "id":2,
+   "roleName":"Senior – Java / Microservices Developer",
+   "postedDate":"10/05/2020",
+   "location":"London",
+   "jobType":"Full Time",
+   "jobDescription":[
+      "Senior – Java / Microservices Developer need around 7.5 – 9.0  years of experience in a development / maintenance projects with at least 2 years of experience as UI Technical lead"
+   ],
+   "mandatorySkills":[
+      "Experience on Core Java / Java 8+, Spring and Spring Boot, Hibernate and Unit Testing frameworks.",
+      "Experience in Apache Camel Framework, as this is a very high priority and will be an added advantage to our projects",
+      "Candidate in each of these technologies stated above, a minimum expectation would be a minimum 5+ years of experience in each of these frameworks",
+      "Java, Spring MVC, TDD, Hibernate, Design Patterns, Restful services, Camel, Continuous integration.",
+      "Creation/ update of Detailed Design Specifications, program specifications for n-tier & micro service applications",
+      "Develop unit tests and end to end tests using frameworks like Junit, cucumber & selenium",
+      "Experience working for a company with an e-Comm based customer segment.",
+      "Experience working for an agile team with the ability to assume a Scrum Master role",
+      "Strong interpersonal skills to work with colleagues who need encouragement and coaching to learn new technology",
+      "Commercial experience of building a product which has been sold to customers."
+   ],
+   "technicalSkill":[
+      
+   ],
+   "additionalInfo":[
+      "At Mphasis, we promise you the perfect opportunity of building technical excellence, understand business performance and nuances, be abreast with the latest happenings in technology world and enjoy a satisfying work life balance.",
+      "With the current opportunity, you will get to work with the team that has consistently been setting benchmarks for other deliveries in terms of delivery high CSATs, project completion on time and being one of the best teams to work for in the organization.",
+      "You get an open and transparent culture along with freedom to experimentation and innovation"
+   ],
+   "desiredSkills":[
+      "Hands-on in Front End technologies with good exposure to Single Page Application concepts",
+      "Experience in delivering design options analysis papers and manage the design approvals.",
+      "Experience working in distributed environment (Mainframes, Linux, Unix, Windows) with diversified technologies and integrating various systems.",
+      "Solution thinking, Analytical and problem-solving attitude.",
+      "Excellent oral and written communications skills with good stakeholder management.",
+      "Experience in owning and delivering large implementations"
+   ],
+   "qualification":[
+      "Education qualification: B.Tech, BE, BCA, MCA, M. Tech or equivalent technical degree from a reputed college"
+   ],
+   "salary":"Salary: £85,000 per year",
+   "expiredStatus":false
+},
+        {
+   "id":2,
    "roleName":"Full Stack Software Engineer",
    "postedDate":"10/05/2021",
    "location":"London",
